@@ -1,5 +1,5 @@
 # CIDME - _Pronounced SID-MEE_
-Contextual IDentity Management Engine - Much more than just contact/identity management  - REST API access to contextualized identity information.
+Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine with REST API access to contextualized identity information.
 
 
 
@@ -39,6 +39,7 @@ CIDME does not provide for access control / authorization (_but it certainly cou
 
 CIDME is not, nor does it use, _LDAP_.  However CIDME does provide a lot of similar functionality as LDAP / _directory services_.
 
+CIDME is not a stand-alone piece of software!  It can not be used by itself.
 
 [*Back to TOC*](#toc)
 
@@ -46,11 +47,19 @@ CIDME is not, nor does it use, _LDAP_.  However CIDME does provide a lot of simi
 <a name="goals"/>
 ## Project Goals / Guidelines
 
+* CIDME is intended to be integrated, embedded, and/or used by other software projects / applications.  
+  * CIDME is NOT a stand-alone piece of software!
+* CIDME is intended to be used via a REST API.
+
 [*Back to TOC*](#toc)
 
 
 <a name="whythename"/>
 ## Why the name *CIDME*?
+
+After putting a considerable amount of thought into what this project was to be, as well as what it was not, the CIDME acronym was chosen as it's contents best accurately describes what the project provides.  An _engine_ to _manage contextualized identity_ information.  
+
+The only other major usage of the term which turns up during web searches is a Dental clinic in Spain.  I figured the acronym was unique enough to use and build upon for a software project.
 
 [*Back to TOC*](#toc)
 
@@ -65,7 +74,7 @@ The project is newly created (October 2016).  There is currently no useful softw
 
 
 <a name="whoiswe"/>
-## Who is "*we*"?
+## Who is behind CIDME?
 
 Well, um, currently, it's just me, Joe Thielen, project creator.  But I'm hoping in time the project will grow and be joined by other individuals who share similar beliefs in the project goals / guidelines.
 
