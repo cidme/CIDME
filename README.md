@@ -8,6 +8,7 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 * [What is CIDME???](#whatisit)
 * [What are contexts?](#contexts)
 * [What does CIDME _not_ do?](#notdo)
+* [So what _does_ CIDME do?](#whatitdo)
 * [Project Goals / Guidelines](#goals)
 * [Why the name *CIDME*?](#whythename)
 * [Current project status](#status)
@@ -19,6 +20,8 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 CIDME is software to help manage contextualized contact/identity information and is meant to be integrated/embedded/used by other software projects/applications.  At it's most basic level, it could be considered a contact manager... _on steroids_!  But it's much more than that.  There is a lot of software out there that can manage contact/identity information.  CIDME is different in that it brings another concept into play... putting this information into _contexts_.
 
 While heavy emphasis is placed on _contexts_ in CIDME, it's entirely possible to use it as a simple contact manager as well.  
+
+Before we discuss what exactly CIDME does, let's first go over what _contexts_ are, and what CIDME does _not_ do...
 
 [*Back to TOC*](#toc)
 
@@ -46,6 +49,24 @@ CIDME does not provide for access control / authorization (_but it certainly cou
 CIDME is not, nor does it use, _LDAP_.  However CIDME does provide a lot of similar functionality as LDAP / _directory services_.
 
 CIDME is not a stand-alone piece of software!  It can not be used by itself.
+
+[*Back to TOC*](#toc)
+
+
+<a name="whatitdo"/>
+## So what _does_ CIDME do?
+
+CIDME provides functionality, exposed via a REST API, to:
+* Store and retrieve entity and identity information.
+  * This includes personal information such as:
+    * Name
+    * Demographics
+    * Addresses
+    * Phone Numbers
+    * etc...
+  * This can also include keeping a history of the above information, to keep track of changes.
+* Associate the above information with specific contexts for a given entity.
+* **MORE TO COME...**
 
 [*Back to TOC*](#toc)
 
