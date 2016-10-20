@@ -1,4 +1,4 @@
-# CIDME - _Pronounced SID-MEE_
+# CIDME (_Pronounced SID-MEE_)
 Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine with REST API access to contextualized identity information.
 
 
