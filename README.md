@@ -10,6 +10,8 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 * [What does CIDME _not_ do?](#notdo)
 * [So what _does_ CIDME do?](#whatitdo)
 * [Project Goals / Guidelines](#goals)
+* [Why use CIDME?](#whyuse)
+* [Why not just use IdM/IaM?](#whynotidm)
 * [Why the name *CIDME*?](#whythename)
 * [Current project status](#status)
 * [Who is "*we*"?](#whoiswe)
@@ -58,11 +60,14 @@ CIDME is not a stand-alone piece of software!  It can not be used by itself.
 
 CIDME provides functionality, exposed via a REST API, to:
 * Store and retrieve entity and identity information.
-  * This includes personal information such as:
-    * Name
-    * Demographics
-    * Addresses
-    * Phone Numbers
+  * This includes such personal information such as:
+    * Personally Identifiable Information (PII)
+      * Name
+      * Demographics
+    * Contact information:
+      * Postal addresses
+      * Phone Numbers
+      * Email addresses
     * etc...
   * This can also include keeping a history of the above information, to keep track of changes.
 * Associate the above information with specific contexts for a given entity.
@@ -81,6 +86,35 @@ CIDME provides functionality, exposed via a REST API, to:
     * Separating personal information from the rest of the system.
     * Providing a programming language-neutral method of interaction.
   
+[*Back to TOC*](#toc)
+
+
+<a name="whyuse"/>
+## Why use CIDME?
+
+Good question!
+
+* Keeping Personally Identifying Information (PII) separate from other parts of a system is good practice.
+  * CIDME is intended to be hidden from public access and not directly available except through application logic.
+  * CIDME provides random, unique, identifiers for identities / contexts.  These can be used and stored by the application instead of the actual PII.  
+    * When the actual PII needs to be referenced, the application uses CIDME to retrieve it.
+* Keeping PII and Protected Health Information (PHI) separate is important, where applicable.
+* Contexts!!!
+* Quick start your new application by not re-inventing the wheel.
+
+[*Back to TOC*](#toc)
+
+
+<a name="whynotidm"/>
+## Why not just use IdM/IaM?
+
+Another good question!
+
+CIDME is not an IdM/IaM replacement.  You probably want to use IdM/IaM in addition to CIDME.  IdM/IaM help control access to your _application users_.  While information about them can also go into CIDME, it's the information about _other people_ for which CIDME is intended.  For example, in the health care world, the hospital or clinic has an information system (_EHR_) which isn't typically intended to be accessed by the patient.  But it _is_ designed to store information _about_ the patient.  The nurses and doctors are typically the _users_ in this situation, and those would be covered by IdM/IaM.  But the patient, in this situation, is better covered by separate functionality.  
+
+This is where CIDME comes into play.
+
+
 [*Back to TOC*](#toc)
 
 
