@@ -14,6 +14,7 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 * [Why not just use IdM/IaM?](#whynotidm)
 * [Why the name *CIDME*?](#whythename)
 * [Current project status](#status)
+* [Basic CIDME Architecture](#architecture)
 * [Who is "*we*"?](#whoiswe)
 * [Who is *Joe Thielen*?](#joethielen)
 
@@ -133,6 +134,24 @@ The only other major usage of the term which turns up during web searches is a D
 
 The project is newly created (October 2016).  There is currently no useful software produced by this project, _yet_.
 
+
+[*Back to TOC*](#toc)
+
+
+<a name="architecture"/>
+## Basic CIDME Architecture
+
+The current plan is to separate functionality into a couple of different pieces:
+
+* CIDME-CORE-PHP
+  * The core functionality
+  * Implemented using the following technologies:
+    * [Doctrine ORM](http://www.doctrine-project.org/projects/orm.html) - Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL).
+      * Core objects implemented as ORM Entities, accessed via a controlling interface class.
+* CIDME-REST-API-V1-PHP
+  * The REST interface to the core functionality.
+  * Implemented using the following technologies:
+    * [Silex](http://silex.sensiolabs.org/) - a PHP micro-framework based on [components from the Symfony framework](http://symfony.com/components).
 
 [*Back to TOC*](#toc)
 
