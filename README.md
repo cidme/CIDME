@@ -86,7 +86,8 @@ CIDME provides functionality, exposed via a REST API, to:
   * This provides for several important benefits:
     * Separating personal information from the rest of the system.
     * Providing a programming language-neutral method of interaction.
-  
+* However, CIDME can also be used/embedded directly via it's core components for smaller projects or those not using CIDME for PII-intensive applications.
+
 [*Back to TOC*](#toc)
 
 
