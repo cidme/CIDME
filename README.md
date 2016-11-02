@@ -99,6 +99,7 @@ CIDME provides functionality, exposed via a REST API, to:
     * [PSR-12 - Extended Coding Style Guide](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md)
   * Autoloadable via [Composer](https://getcomposer.org/)
   * Documented using the [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) commenting style.
+  * Unit tested using the [PHPUnit](https://phpunit.de/) unit testing package.
 
 [*Back to TOC*](#toc)
 
