@@ -170,7 +170,7 @@ The current plan is to separate functionality into a couple of different pieces:
       * CIDME will provide a Swagger/OpenAPI-compliant JSON file for use with the [Swagger-Editor](http://swagger.io/swagger-editor/) and [Swagger-UI](http://swagger.io/swagger-ui/) tools.
     * [JSON Hypertext Application Language (HAL or hal+json)](https://tools.ietf.org/html/draft-kelly-json-hal)
       * CIDME will provide HAL/hal+json compliant extended JSON when requested for easier navigation.
-
+      * Additional info: [http://stateless.co/hal_specification.html](http://stateless.co/hal_specification.html)
 [*Back to TOC*](#toc)
 
 
