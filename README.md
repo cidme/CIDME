@@ -37,6 +37,8 @@ To put it another way, let's consider the fictional character of [Dr. Jekyll / M
 
 Let's get back to real life here.  Whether your needs are based on separating information by _episodes of care_, _encounters_, _cases_, or _whatever_, CIDME can provide a better way to help deal with, and separate, this information.
 
+CIDME contexts can also be _nested_, meaning a given context can be a _subcontext_ of another.  Again, using the health care world as an example, the top level context could be for _episode of care_ and individual _encounters_ could be linked to that as subcontexts.
+
 CIDME also provides the ability to associate date ranges with contexts.  Why is this useful?  **DATA RETENTION** and **DATA PURGING**.  Most software applications deal with getting information _into_ the system.  Very few provide methods of getting rid of it, especially on a timely basis and in an easy manner.  Let's say you're required to keep information for a given person for _X_ number of years.  CIDME specifically provides for date ranges to make this possible!
 
 [*Back to TOC*](#toc)
