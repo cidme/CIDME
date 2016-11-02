@@ -87,6 +87,12 @@ CIDME provides functionality, exposed via a REST API, to:
     * Separating personal information from the rest of the system.
     * Providing a programming language-neutral method of interaction.
 * However, CIDME can also be used/embedded directly via it's core components for smaller projects or those not using CIDME for PII-intensive applications.
+* CIDME PHP code will be:
+  * Compliant with the following [PHP Standards Recommendations](http://www.php-fig.org/psr/):
+    * [PSR-1 - Basic Coding Standard](http://www.php-fig.org/psr/psr-1/)
+    * [PSR-2 - Coding Style Guide](http://www.php-fig.org/psr/psr-2/)
+    * [PSR-4 - Autoloader](http://www.php-fig.org/psr/psr-4/)
+  * Autoloadable via [Composer](https://getcomposer.org/)
 
 [*Back to TOC*](#toc)
 
