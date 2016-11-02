@@ -94,7 +94,11 @@ CIDME provides functionality, exposed via a REST API, to:
     * [PSR-1 - Basic Coding Standard](http://www.php-fig.org/psr/psr-1/)
     * [PSR-2 - Coding Style Guide](http://www.php-fig.org/psr/psr-2/)
     * [PSR-4 - Autoloader](http://www.php-fig.org/psr/psr-4/)
+  * Other draft PHP PSRs CIDME may or may not follow:
+    * [PSR-5 - PHPDoc Standard](https://github.com/phpDocumentor/fig-standards/tree/master/proposed)
+    * [PSR-12 - Extended Coding Style Guide](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md)
   * Autoloadable via [Composer](https://getcomposer.org/)
+  * Documented using the [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) commenting style.
 
 [*Back to TOC*](#toc)
 
