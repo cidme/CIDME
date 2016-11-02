@@ -113,7 +113,7 @@ Good question!
   * CIDME is intended to be hidden from public access and not directly available except through application logic.
   * CIDME provides random, unique, identifiers for identities / contexts.  These can be used and stored by the application instead of the actual PII.  
     * When the actual PII needs to be referenced, the application uses CIDME to retrieve it.
-* Keeping PII and Protected Health Information (PHI) separate is important, where applicable.
+* Keeping PII as well as Protected Health Information (PHI) separate is important, where applicable.
 * Contexts!!!
 * Quick start your new application by not re-inventing the wheel.
 
