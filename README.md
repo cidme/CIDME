@@ -14,6 +14,7 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 * [Why not just use IdM/IaM?](#whynotidm)
 * [Why the name *CIDME*?](#whythename)
 * [Current project status](#status)
+* [Documentation](#docs)
 * [Basic CIDME Architecture](#architecture)
 * [Who is "*we*"?](#whoiswe)
 * [Who is *Joe Thielen*?](#joethielen)
@@ -147,6 +148,15 @@ The only other major usage of the term which turns up during web searches is a D
 ## Current project status
 
 The project is newly created (October 2016).  There is currently no useful software produced by this project, _yet_.
+
+
+[*Back to TOC*](#toc)
+
+
+<a name="docs"/>
+## Documentation
+
+Aside from this document, please refer to the [project wiki](../../wiki/)!
 
 
 [*Back to TOC*](#toc)
