@@ -186,6 +186,7 @@ The current plan is to separate functionality into a couple of different pieces:
       * POST (Create)
       * GET (Read)
       * PATCH (Update)
+        * [See this wiki article for more info](../../wiki/REST-API:-PUT-vs-PATCH-vs-PATCH-vs-PATCH-(etc...))
       * DELETE (Delete)
       * OPTIONS
       * Not sure about:
