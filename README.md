@@ -181,7 +181,20 @@ The current plan is to separate functionality into a couple of different pieces:
     * [JSON Hypertext Application Language (HAL or hal+json)](https://tools.ietf.org/html/draft-kelly-json-hal)
       * CIDME will provide HAL/hal+json compliant extended JSON when requested for easier navigation.
       * Additional info: [http://stateless.co/hal_specification.html](http://stateless.co/hal_specification.html)
-      
+  * HTTP protocol
+    * Will support at least these HTTP _verbs_:
+      * POST (Create)
+      * GET (Read)
+      * PATCH (Update)
+      * DELETE (Delete)
+      * OPTIONS
+      * Not sure about:
+        * PUT - [See this wiki article for more info](../../wiki/REST-API:-PUT-vs-PATCH-vs-PATCH-vs-PATCH-(etc...))
+    * Will also support these HTTP options:
+      * Headers
+        * ETags (GET / POST)
+        * Location (POST)
+
 [*Back to TOC*](#toc)
 
 
