@@ -1,5 +1,5 @@
 # CIDME (_Pronounced SID-MEE_)
-Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine with REST API access to contextualized identity information.
+Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine with REST API/Hypermedia API access to contextualized identity information.
 
 📌⛔⚠ **_IMPORTANT NOTE:_ This project is in it's very early stages.  Therefore anything in this document may change at any time, and any information in this document may also be incorrect or outdated at any point!!!**
 
@@ -62,7 +62,7 @@ CIDME is not a stand-alone piece of software!  It can not be used by itself.
 <a name="whatitdo"/>
 ## So what _does_ CIDME do?
 
-CIDME provides functionality, exposed via a REST API, to:
+CIDME provides functionality, exposed via a REST API/Hypermedia API, to:
 * Store and retrieve entity and identity information.
   * This includes such personal information such as:
     * Personally Identifiable Information (PII)
@@ -85,7 +85,7 @@ CIDME provides functionality, exposed via a REST API, to:
 
 * CIDME is intended to be integrated, embedded, and/or used by other software projects / applications.  
   * CIDME is NOT a stand-alone piece of software!
-* CIDME is intended to be used via a REST API.
+* CIDME is intended to be used via a REST API/Hypermedia API.
   * This provides for several important benefits:
     * Separating personal information from the rest of the system.
     * Providing a programming language-neutral method of interaction.
@@ -173,7 +173,7 @@ The current plan is to separate functionality into a couple of different pieces:
     * [Doctrine ORM](http://www.doctrine-project.org/projects/orm.html) - Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL).
       * Core objects implemented as ORM Entities, accessed via a controlling interface class.
 * CIDME-REST-API-V1-PHP
-  * The REST interface to the core functionality.
+  * The REST/Hypermedia interface to the core functionality.
   * Implemented using the following technologies:
     * [Silex](http://silex.sensiolabs.org/) - a PHP micro-framework based on [components from the Symfony framework](http://symfony.com/components).
     * [Swagger](http://swagger.io/) - an API framework / [OpenAPI Specification](https://www.openapis.org/)
