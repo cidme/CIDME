@@ -16,6 +16,7 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 * [Current project status](#status)
 * [Documentation](#docs)
 * [Basic CIDME Architecture](#architecture)
+  * [Entity Relationship Diagram (*ERD*)](#erd)
 * [Who is "*we*"?](#whoiswe)
 * [Who is *Joe Thielen*?](#joethielen)
 
@@ -198,11 +199,15 @@ The current plan is to separate functionality into a couple of different pieces:
         * If-Modified-Since (GET)
         * Location (POST)
 
+[*Back to TOC*](#toc)
+
+
+<a name="erd"/>
 ### Entity Relationship Diagram (*ERD*)
 
 NOTE - This is a DRAFT and may change at any time!
 
-[DRAFT CIDME ERD](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png "DRAFT CIDME ERD")
+![DRAFT CIDME ERD](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png "DRAFT CIDME ERD")
 
 [*Back to TOC*](#toc)
 
