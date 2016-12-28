@@ -194,7 +194,8 @@ The current plan is to separate functionality into a couple of different pieces:
     * Will also support these HTTP options:
       * Headers
         * ETags (GET / POST)
-        * If-None-Match (GET)
+        * If-Match / If-None-Match (GET)
+        * If-Modified-Since (GET)
         * Location (POST)
 
 [*Back to TOC*](#toc)
