@@ -208,6 +208,7 @@ The current plan is to separate functionality into a couple of different pieces:
 NOTE - This is a DRAFT and may change at any time!
 
 ![DRAFT CIDME ERD](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png "DRAFT CIDME ERD")
+[Click here to view the entire diagram/file](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png)
 
 [*Back to TOC*](#toc)
 
