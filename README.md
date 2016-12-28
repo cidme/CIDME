@@ -198,6 +198,12 @@ The current plan is to separate functionality into a couple of different pieces:
         * If-Modified-Since (GET)
         * Location (POST)
 
+### Entity Relationship Diagram (*ERD*)
+
+NOTE - This is a DRAFT and may change at any time!
+
+[DRAFT CIDME ERD](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png "DRAFT CIDME ERD")
+
 [*Back to TOC*](#toc)
 
 
