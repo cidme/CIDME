@@ -148,7 +148,9 @@ The only other major usage of the term which turns up during web searches is a D
 <a name="status"/>
 ## Current project status
 
-The project is newly created (October 2016).  There is currently no useful software produced by this project, _yet_.
+* The project was first created in October 2016).
+* As of February 2017 CIDME is being retooled to use the [Neo4j graph database](https://neo4j.com/) as the underlying storage mechanism and [neo4j-php-ogm](https://github.com/graphaware/neo4j-php-ogm) as the Object Graph Mapper (OGM - an ORM for graphs).  A graph database lends itself to internal use by CIDME in a great way, as both are for use in storing highly-connected data where the relationships themsevles are just as important as the records / nodes.
+* There is currently no useful software produced by this project, _yet_.
 
 
 [*Back to TOC*](#toc)
@@ -171,8 +173,9 @@ The current plan is to separate functionality into a couple of different pieces:
 * CIDME-CORE-PHP
   * The core functionality
   * Implemented using the following technologies:
-    * [Doctrine ORM](http://www.doctrine-project.org/projects/orm.html) - Object relational mapper (ORM) for PHP that sits on top of a powerful database abstraction layer (DBAL).
-      * Core objects implemented as ORM Entities, accessed via a controlling interface class.
+    * [neo4j-php-ogm](https://github.com/graphaware/neo4j-php-ogm) - Object Graph Mapper (OGM) for PHP for Neo4j.
+      * Core objects implemented as OGM Entities, accessed via a controlling interface class.
+    * [neo4j Graph Database](https://neo4j.com) 
 * CIDME-REST-API-V1-PHP
   * The REST/Hypermedia interface to the core functionality.
   * Implemented using the following technologies:
@@ -205,7 +208,9 @@ The current plan is to separate functionality into a couple of different pieces:
 <a name="erd"/>
 ### Entity Relationship Diagram (*ERD*)
 
-NOTE - This is a DRAFT and may change at any time!
+**NOTE - This graph has not been updated to reflect the Feb 2017 course change to a graphDB**
+
+**NOTE - This is a DRAFT and may change at any time!**
 
 ![DRAFT CIDME ERD](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png "DRAFT CIDME ERD")
 [Click here to view the entire diagram/file](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png)
