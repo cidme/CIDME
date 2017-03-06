@@ -208,8 +208,6 @@ The current plan is to separate functionality into a couple of different pieces:
 <a name="erd"/>
 ### Entity Relationship Diagram (*ERD*)
 
-**NOTE - This graph has not been updated to reflect the Feb 2017 course change to a graphDB**
-
 **NOTE - This is a DRAFT and may change at any time!**
 
 ![DRAFT CIDME ERD](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png "DRAFT CIDME ERD")
