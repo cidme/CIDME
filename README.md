@@ -148,7 +148,7 @@ The only other major usage of the term which turns up during web searches is a D
 <a name="status"/></a>
 ## Current project status
 
-* The project was first created in October 2016).
+* The project was first created in October 2016.
 * As of February 2017 CIDME is being retooled to use the [Neo4j graph database](https://neo4j.com/) as the underlying storage mechanism and [neo4j-php-ogm](https://github.com/graphaware/neo4j-php-ogm) as the Object Graph Mapper (OGM - an ORM for graphs).  A graph database lends itself to internal use by CIDME in a great way, as both are for use in storing highly-connected data where the relationships themsevles are just as important as the records / nodes.
 * There is currently no useful software produced by this project, _yet_.
 
