@@ -3,7 +3,7 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 
 📌⛔⚠ **_IMPORTANT NOTE:_ This project is in it's very early stages.  Therefore anything in this document may change at any time, and any information in this document may also be incorrect or outdated at any point!!!**
 
-<a name="toc"/>
+<a name="toc"/></a>
 ## Table of Contents
 * [What is CIDME???](#whatisit)
 * [What are contexts?](#contexts)
@@ -20,7 +20,7 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 * [Who is "*we*"?](#whoiswe)
 * [Who is *Joe Thielen*?](#joethielen)
 
-<a name="whatisit"/>
+<a name="whatisit"/></a>
 ## What is CIDME???
 CIDME is software to help manage contextualized contact/identity information and is meant to be integrated/embedded/used by other software projects/applications.  At it's most basic level, it could be considered a contact manager... _on steroids_!  But it's much more than that.  There is a lot of software out there that can manage contact/identity information.  CIDME is different in that it brings another concept into play... putting this information into _contexts_.
 
@@ -31,7 +31,7 @@ Before we discuss what exactly CIDME does, let's first go over what _contexts_ a
 [*Back to TOC*](#toc)
 
 
-<a name="contexts"/>
+<a name="contexts"/></a>
 ## What are contexts?
 In the health care world a context could be an _episode of care_ or even an individual _encounter_ for a given patient.  In _case management_, the individual _cases_ themselves could be contexts.  Complex cases may actually need to be dealt with in parts, each of which could also be considered a context.  
 
@@ -46,7 +46,7 @@ CIDME also provides the ability to associate date ranges with contexts.  Why is 
 [*Back to TOC*](#toc)
 
 
-<a name="notdo"/>
+<a name="notdo"/></a>
 ## What does CIDME _not_ do?
 CIDME does not provide for access control / authorization (_but it certainly could be incorporated into one, especially a custom one_).  There are already many software projects/solutions that deal with this.  Therefore, CIDME doesn't necessarily fall into these following categories:
 * **Identity Management (__IdM__)**
@@ -60,7 +60,7 @@ CIDME is not a stand-alone piece of software!  It can not be used by itself.
 [*Back to TOC*](#toc)
 
 
-<a name="whatitdo"/>
+<a name="whatitdo"/></a>
 ## So what _does_ CIDME do?
 
 CIDME provides functionality, exposed via a REST API/Hypermedia API, to:
@@ -81,7 +81,7 @@ CIDME provides functionality, exposed via a REST API/Hypermedia API, to:
 [*Back to TOC*](#toc)
 
 
-<a name="goals"/>
+<a name="goals"/></a>
 ## Project Goals / Guidelines
 
 * CIDME is intended to be integrated, embedded, and/or used by other software projects / applications.  
@@ -106,7 +106,7 @@ CIDME provides functionality, exposed via a REST API/Hypermedia API, to:
 [*Back to TOC*](#toc)
 
 
-<a name="whyuse"/>
+<a name="whyuse"/></a>
 ## Why use CIDME?
 
 Good question!
@@ -122,7 +122,7 @@ Good question!
 [*Back to TOC*](#toc)
 
 
-<a name="whynotidm"/>
+<a name="whynotidm"/></a>
 ## Why not just use IdM/IaM?
 
 Another good question!
@@ -135,7 +135,7 @@ This is where CIDME comes into play.
 [*Back to TOC*](#toc)
 
 
-<a name="whythename"/>
+<a name="whythename"/></a>
 ## Why the name *CIDME*?
 
 After putting a considerable amount of thought into what this project was to be, as well as what it was not, the CIDME acronym was chosen as it's contents best accurately describes what the project provides.  An _engine_ to _manage contextualized identity_ information.  
@@ -145,7 +145,7 @@ The only other major usage of the term which turns up during web searches is a D
 [*Back to TOC*](#toc)
 
 
-<a name="status"/>
+<a name="status"/></a>
 ## Current project status
 
 * The project was first created in October 2016).
@@ -156,7 +156,7 @@ The only other major usage of the term which turns up during web searches is a D
 [*Back to TOC*](#toc)
 
 
-<a name="docs"/>
+<a name="docs"/></a>
 ## Documentation
 
 Aside from this document, please refer to the [project wiki](../../wiki/)!
@@ -165,7 +165,7 @@ Aside from this document, please refer to the [project wiki](../../wiki/)!
 [*Back to TOC*](#toc)
 
 
-<a name="architecture"/>
+<a name="architecture"/></a>
 ## Basic CIDME Architecture
 
 The current plan is to separate functionality into a couple of different pieces:
@@ -205,7 +205,7 @@ The current plan is to separate functionality into a couple of different pieces:
 [*Back to TOC*](#toc)
 
 
-<a name="erd"/>
+<a name="erd"/></a>
 ### Entity Relationship Diagram (*ERD*)
 
 **NOTE - This is a DRAFT and may change at any time!**
@@ -216,7 +216,7 @@ The current plan is to separate functionality into a couple of different pieces:
 [*Back to TOC*](#toc)
 
 
-<a name="whoiswe"/>
+<a name="whoiswe"/></a>
 ## Who is behind CIDME?
 
 Well, um, currently, it's just me, Joe Thielen, project creator.  But I'm hoping in time the project will grow and be joined by other individuals who share similar beliefs in the project goals / guidelines.
@@ -226,7 +226,7 @@ Please, *feel free* to drop me a line!  I've created this project on GitHub spec
 [*Back to TOC*](#toc)
 
 
-<a name="joethielen"/>
+<a name="joethielen"/></a>
 ## Who is *Joe Thielen*?
 
 I've been creating fairly complex, but monolithic, LAMP apps for both non- and for-profit companies for over 20 years.  My experience lies with small- and medium- sized organizations / businesses in the USA.  Most of these apps have, in one form or another, made heavy use of, or even dealt primarily with, contact / identity information.  The genesis of this project was to create a separate piece of software to provide this functionality, so as to be able to be used by other software projects.
