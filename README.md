@@ -17,6 +17,7 @@ Contextual IDentity Management Engine - Much more than just contact/identity man
 * [Documentation](#docs)
 * [Basic CIDME Architecture](#architecture)
   * [Entity Relationship Diagram (*ERD*)](#erd)
+* [Other projects making use of *CIDME*](#otherprojects)
 * [Who is "*we*"?](#whoiswe)
 * [Who is *Joe Thielen*?](#joethielen)
 
@@ -212,6 +213,14 @@ The current plan is to separate functionality into a couple of different pieces:
 
 ![DRAFT CIDME ERD](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png "DRAFT CIDME ERD")
 [Click here to view the entire diagram/file](/docs/CIDME-Entity_Rel_Diagram-DRAFT.png)
+
+[*Back to TOC*](#toc)
+
+
+<a name="otherprojects"/></a>
+## Other projects making use of CIDME
+
+* [IMSFAY](http://www.github.com/IMSFAY) - *Information Management System for Families, Adults, and Youth*
 
 [*Back to TOC*](#toc)
 
