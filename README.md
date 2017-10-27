@@ -220,7 +220,7 @@ The current plan is to separate functionality into a couple of different pieces:
 <a name="otherprojects"/></a>
 ## Other projects making use of CIDME
 
-* [IMSFAY](http://www.github.com/IMSFAY) - *Information Management System for Families, Adults, and Youth*
+* [IMSFAY](http://www.github.com/IMSFAY/IMSFAY) - *Information Management System for Families, Adults, and Youth*
 
 [*Back to TOC*](#toc)
 
