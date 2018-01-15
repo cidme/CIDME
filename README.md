@@ -1,5 +1,5 @@
 # CIDME (_Pronounced SID-MEE_)
-Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine with REST API/Hypermedia API access to contextualized identity information.
+Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine for management of contextualized identity information.
 
 📌⛔⚠ **_IMPORTANT NOTE:_ This project is in it's very early stages.  Therefore anything in this document may change at any time, and any information in this document may also be incorrect or outdated at any point!!!**
 
@@ -64,7 +64,7 @@ CIDME is not a stand-alone piece of software!  It can not be used by itself.
 <a name="whatitdo"/></a>
 ## So what _does_ CIDME do?
 
-CIDME provides functionality, exposed via a REST API/Hypermedia API, to:
+CIDME provides functionality to:
 * Store and retrieve entity and identity information.
   * This includes such personal information such as:
     * Personally Identifiable Information (PII)
@@ -87,11 +87,6 @@ CIDME provides functionality, exposed via a REST API/Hypermedia API, to:
 
 * CIDME is intended to be integrated, embedded, and/or used by other software projects / applications.  
   * CIDME is NOT a stand-alone piece of software!
-* CIDME is intended to be used via a REST API/Hypermedia API.
-  * This provides for several important benefits:
-    * Separating personal information from the rest of the system.
-    * Providing a programming language-neutral method of interaction.
-* However, CIDME can also be used/embedded directly via it's core components for smaller projects or those not using CIDME for PII-intensive applications.
 * CIDME PHP code will be:
   * Compliant with the following [PHP Standards Recommendations](http://www.php-fig.org/psr/):
     * [PSR-1 - Basic Coding Standard](http://www.php-fig.org/psr/psr-1/)
@@ -150,9 +145,8 @@ The only other major usage of the term which turns up during web searches is a D
 ## Current project status
 
 * The project was first created in October 2016.
-* As of February 2017 CIDME is being retooled to use the [Neo4j graph database](https://neo4j.com/) as the underlying storage mechanism and [neo4j-php-ogm](https://github.com/graphaware/neo4j-php-ogm) as the Object Graph Mapper (OGM - an ORM for graphs).  A graph database lends itself to internal use by CIDME in a great way, as both are for use in storing highly-connected data where the relationships themsevles are just as important as the records / nodes.
+* As of Jan 2018 the project focus is creating the core engine.
 * There is currently no useful software produced by this project, _yet_.
-
 
 [*Back to TOC*](#toc)
 
@@ -169,39 +163,7 @@ Aside from this document, please refer to the [project wiki](../../wiki/)!
 <a name="architecture"/></a>
 ## Basic CIDME Architecture
 
-The current plan is to separate functionality into a couple of different pieces:
-
-* CIDME-CORE-PHP
-  * The core functionality
-  * Implemented using the following technologies:
-    * [neo4j-php-ogm](https://github.com/graphaware/neo4j-php-ogm) - Object Graph Mapper (OGM) for PHP for Neo4j.
-      * Core objects implemented as OGM Entities, accessed via a controlling interface class.
-    * [neo4j Graph Database](https://neo4j.com) 
-* CIDME-REST-API-V1-PHP
-  * The REST/Hypermedia interface to the core functionality.
-  * Implemented using the following technologies:
-    * [Silex](http://silex.sensiolabs.org/) - a PHP micro-framework based on [components from the Symfony framework](http://symfony.com/components).
-    * [Swagger](http://swagger.io/) - an API framework / [OpenAPI Specification](https://www.openapis.org/)
-      * CIDME will provide a Swagger/OpenAPI-compliant JSON file for use with the [Swagger-Editor](http://swagger.io/swagger-editor/) and [Swagger-UI](http://swagger.io/swagger-ui/) tools.
-    * [JSON Hypertext Application Language (HAL or hal+json)](https://tools.ietf.org/html/draft-kelly-json-hal)
-      * CIDME will provide HAL/hal+json compliant extended JSON when requested for easier navigation.
-      * Additional info: [http://stateless.co/hal_specification.html](http://stateless.co/hal_specification.html)
-  * HTTP protocol
-    * Will support at least these HTTP _verbs_:
-      * POST (Create)
-      * GET (Read)
-      * PATCH (Update)
-        * [See this wiki article for more info](../../wiki/REST-API:-PUT-vs-PATCH-vs-PATCH-vs-PATCH-(etc...))
-      * DELETE (Delete)
-      * OPTIONS
-      * Not sure about:
-        * PUT - [See this wiki article for more info](../../wiki/REST-API:-PUT-vs-PATCH-vs-PATCH-vs-PATCH-(etc...))
-    * Will also support these HTTP options:
-      * Headers
-        * ETags (GET / POST)
-        * If-Match / If-None-Match (GET)
-        * If-Modified-Since (GET)
-        * Location (POST)
+The current focus is implementing the core functionality into an easily embedded package.
 
 [*Back to TOC*](#toc)
 
