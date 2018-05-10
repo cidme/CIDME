@@ -8,9 +8,14 @@
   "@type": "rdf:Property",
   "rdfs:comment": "The CIDME Entity type.",
   "rdfs:label": "entityType",
-  "schema:domainIncludes": {
+  "schema:domainIncludes": [
+    {
     "@id": "cidme:Entity"
-  },
+    },
+    {
+    "@id": "cidme:Context"
+    }
+  ],
   "schema:rangeIncludes": {
     "@id": "schema:Text"
   }
