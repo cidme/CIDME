@@ -9,7 +9,10 @@
       "@id": "cidme:Context",
       "@type": "rdfs:Class",
       "rdfs:comment": "CIDME Entity Context.  A context represents one aspect of an Entity.",
-      "rdfs:label": "Context"
+      "rdfs:label": "Context",
+      "schema:domainIncludes": {
+        "@id": "cidme:Entity"
+      }
     }
   ]
 }
