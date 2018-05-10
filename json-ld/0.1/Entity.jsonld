@@ -1,1 +1,20 @@
-{}
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://cidme.net/Entity",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "An Entity is a top level CIDME object.",
+      "rdfs:label": "Entity"
+    },
+    {
+      "@id": "http://cidme.net/Context",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "A CIDME Entity Context.",
+      "rdfs:label": "Context"
+    }
+}
