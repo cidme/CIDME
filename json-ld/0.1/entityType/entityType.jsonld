@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/json-ld/0.1/jsonldcontext.json"
+  },
+  "@id": "cidme:entityType",
+  "@type": "rdf:Property",
+  "rdfs:comment": "The CIDME Entity type.",
+  "rdfs:label": "entityType",
+  "schema:domainIncludes": {
+    "@id": "cidme:Entity"
+  },
+  "schema:rangeIncludes": {
+    "@id": "schema:Text"
+  }
+}
