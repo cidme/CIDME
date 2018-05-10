@@ -3,7 +3,7 @@
     "type": "@type",
     "id": "@id",
     "@vocab": "http://cidme.net/",
-    "cidme": "http://cidme.net.org/",
+    "cidme": "http://cidme.net/",
     "Entity": {"@id": "cidme:Entity"},
     "Context": {"@id": "cidme:Context"},
     "entityType": {"@id": "cidme:entityType"}
