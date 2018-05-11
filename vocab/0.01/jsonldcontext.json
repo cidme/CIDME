@@ -17,6 +17,6 @@
     "visibility": {"@id": "cidme:visibility/visibility.jsonld"},
     "Public": {"@id": "cidme:Public/Public.jsonld"},
     "Private": {"@id": "cidme:Private/Private.jsonld"},
-    "One-Off": {"@id": "cidme:One-Off/One-Off.jsonld"}
+    "One-off": {"@id": "cidme:One-Off/One-off.jsonld"}
   }
 }
