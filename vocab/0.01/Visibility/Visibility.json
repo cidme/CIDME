@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
+  },
+  "@id": "cidme:Visibility",
+  "@type": "rdf:Class",
+  "rdfs:comment": "Enumerated CIDME Entity Context visibility options.",
+  "rdfs:label": "Visibility",
+  "rdfs:subClassOf": {
+    "@id": "http://schema.org/Enumeration"
+  }
+}
