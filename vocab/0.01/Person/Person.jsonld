@@ -4,10 +4,8 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
   },
-  {
-    "@id": "cidme://Person",
-    "@type": "cidme:EntityType",
-    "rdfs:comment": "An entityType representing a Person.",
-    "rdfs:label": "Person"
-  }
+  "@id": "cidme://Person",
+  "@type": "cidme:EntityType",
+  "rdfs:comment": "An entityType representing a Person.",
+  "rdfs:label": "Person"
 }
