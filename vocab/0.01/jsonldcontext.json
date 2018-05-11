@@ -13,8 +13,8 @@
     "Organization": {"@id": "cidme:Organization/Organization.jsonld"},
     "Thing": {"@id": "cidme:Thing/Thing.jsonld"},
     "default": {"@id": "cidme:default/default.jsonld"},
-    "visibility": {"@id": "cidme:visibility/visibility.jsonld"},
     "Visibility": {"@id": "cidme:Visibility/Visibility.jsonld"},
+    "visibility": {"@id": "cidme:visibility/visibility.jsonld"},
     "Public": {"@id": "cidme:Public/Public.jsonld"},
     "Private": {"@id": "cidme:Private/Private.jsonld"},
     "One-Off": {"@id": "cidme:One-Off/One-Off.jsonld"}
