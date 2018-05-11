@@ -4,13 +4,13 @@
     "id": "@id",
     "@vocab": "http://cidme.net/vocab/0.1/",
     "cidme": "http://cidme.net/vocab/0.1/",
-    "Entity": {"@id": "cidme:Entity"},
-    "Context": {"@id": "cidme:Context"},
-    "entityType": {"@id": "cidme:entityType"},
-    "EntityType": {"@id": "cidme:EntityType"},
-    "Person": {"@id": "cidme:Person"},
-    "Place": {"@id": "cidme:Place"},
-    "Organization": {"@id": "cidme:Organization"},
-    "Thing": {"@id": "cidme:Thing"}    
+    "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
+    "Context": {"@id": "cidme:Context/Context.jsonld"},
+    "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
+    "EntityType": {"@id": "cidme:EntityType/EntityType.jsonld"},
+    "Person": {"@id": "cidme:Person/Person.jsonld"},
+    "Place": {"@id": "cidme:Place/Place.jsonld"},
+    "Organization": {"@id": "cidme:Organization/Organization.jsonld"},
+    "Thing": {"@id": "cidme:Thing/Thing.jsonld"}
   }
 }
