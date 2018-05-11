@@ -6,11 +6,17 @@
     "cidme": "http://cidme.net/vocab/0.1/",
     "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
     "Context": {"@id": "cidme:Context/Context.jsonld"},
-    "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
     "EntityType": {"@id": "cidme:EntityType/EntityType.jsonld"},
+    "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
     "Person": {"@id": "cidme:Person/Person.jsonld"},
     "Place": {"@id": "cidme:Place/Place.jsonld"},
     "Organization": {"@id": "cidme:Organization/Organization.jsonld"},
-    "Thing": {"@id": "cidme:Thing/Thing.jsonld"}
+    "Thing": {"@id": "cidme:Thing/Thing.jsonld"},
+    "default": {"@id": "cidme:default/default.jsonld"},
+    "visibility": {"@id": "cidme:visibility/visibility.jsonld"},
+    "Visibility": {"@id": "cidme:Visibility/Visibility.jsonld"},
+    "Public": {"@id": "cidme:Public/Public.jsonld"},
+    "Private": {"@id": "cidme:Private/Private.jsonld"},
+    "One-Off": {"@id": "cidme:One-Off/One-Off.jsonld"}
   }
 }
