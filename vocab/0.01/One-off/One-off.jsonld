@@ -5,10 +5,8 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
   },
-  {
-      "@id": "cidme://One-off",
-      "@type": "cidme:Visibility",
-      "rdfs:comment": "A CIDME Entity Context visibility.",
-      "rdfs:label": "One-off"
-  }
+  "@id": "cidme://One-off",
+  "@type": "cidme:Visibility",
+  "rdfs:comment": "A CIDME Entity Context visibility.",
+  "rdfs:label": "One-off"
 }
