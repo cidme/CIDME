@@ -2,10 +2,10 @@
   "@context": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
-    "xsd": "http://www.w3.org/2001/XMLSchema#"
-    "schema": "http://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "schema": "http://schema.org/"
  },
-  "@graph": [
+ "@graph": [
     {
       "@id": "http://cidme.net/vocab/0.01/Entity",
       "@type": "rdfs:Class",
