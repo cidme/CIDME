@@ -8,23 +8,9 @@
   "@type": "rdf:Property",
   "rdfs:comment": "CIDME resource visibility level.",
   "rdfs:label": "visibilityLevel",
-  "schema:domainIncludes": [
-    {
-      "@id": "cidme:Entity"
-    },
-    {
-      "@id": "cidme:EntityContext"
-    },
-    {
-      "@id": "cidme:EntityContextLink"
-    },
-    {
-      "@id": "cidme:EntityContextDataGroup"
-    },
-    {
-      "@id": "cidme:Metadata"
-    }
-  ]
+  "schema:domainIncludes": {
+      "@id": "cidme:MetadataVisibility"
+  },
   "schema:rangeIncludes": {
     "@id": "cidme:VisibilityLevel"
   }
