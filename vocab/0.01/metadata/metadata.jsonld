@@ -1,0 +1,31 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
+  },
+  "@id": "cidme:metadata",
+  "@type": "rdf:Property",
+  "rdfs:comment": "CIDME Metadata.",
+  "rdfs:label": "metadata",
+  "schema:domainIncludes": [
+    {
+      "@id": "cidme:Entity"
+    },
+    {
+      "@id": "cidme:EntityContext"
+    },
+    {
+      "@id": "cidme:EntityContextLink"
+    },
+    {
+      "@id": "cidme:EntityContextDataGroup"
+    },
+    {
+      "@id": "cidme:Metadata"
+    }
+  ]
+  "schema:rangeIncludes": {
+    "@id": "cidme:Metadata"
+  }
+}
