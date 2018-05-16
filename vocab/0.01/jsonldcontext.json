@@ -8,16 +8,17 @@
     "EntityContext": {"@id": "cidme:Context/EntityContext.jsonld"},
     "EntityContextLink": {"@id": "cidme:Context/EntityContextLink.jsonld"},
     "EntityContextDataGroup": {"@id": "cidme:Context/EntityContextDataGroup.jsonld"},
+    "EntityContextVisibilityLevel": {"@id": "cidme:EntityContextVisibilityLevel/EntityContextVisibilityLevel.jsonld"},
     "EntityType": {"@id": "cidme:EntityType/EntityType.jsonld"},
-    "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
+    "One-off": {"@id": "cidme:One-Off/One-off.jsonld"},
+    "Organization": {"@id": "cidme:Organization/Organization.jsonld"},
     "Person": {"@id": "cidme:Person/Person.jsonld"},
     "Place": {"@id": "cidme:Place/Place.jsonld"},
-    "Organization": {"@id": "cidme:Organization/Organization.jsonld"},
-    "Thing": {"@id": "cidme:Thing/Thing.jsonld"},
-    "EntityContextVisibilityLevel": {"@id": "cidme:EntityContextVisibilityLevel/EntityContextVisibilityLevel.jsonld"},
-    "entityContextVisibilityLevel": {"@id": "cidme:entityContextVisibilityLevel/entityContextVisibilityLevel.jsonld"},
-    "Public": {"@id": "cidme:Public/Public.jsonld"},
     "Private": {"@id": "cidme:Private/Private.jsonld"},
-    "One-off": {"@id": "cidme:One-Off/One-off.jsonld"}
+    "Public": {"@id": "cidme:Public/Public.jsonld"},
+    "Thing": {"@id": "cidme:Thing/Thing.jsonld"},    
+    "entityContextVisibilityLevel": {"@id": "cidme:entityContextVisibilityLevel/entityContextVisibilityLevel.jsonld"},
+    "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
+    "externalId": {"@id": "cidme:entityType/externalId.jsonld"}
   }
 }
