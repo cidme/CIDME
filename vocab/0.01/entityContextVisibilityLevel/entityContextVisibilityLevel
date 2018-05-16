@@ -9,7 +9,7 @@
   "rdfs:comment": "CIDME Entity Context visibility level.",
   "rdfs:label": "entityContextVisibilityLevel",
   "schema:domainIncludes": {
-    "@id": "cidme:Context"
+    "@id": "cidme:EntityContext"
   },
   "schema:rangeIncludes": {
     "@id": "cidme:entityContextVisibilityLevel"
