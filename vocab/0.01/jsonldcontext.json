@@ -6,6 +6,8 @@
     "cidme": "http://cidme.net/vocab/0.1/",
     "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
     "EntityContext": {"@id": "cidme:Context/EntityContext.jsonld"},
+    "EntityContextLink": {"@id": "cidme:Context/EntityContextLink.jsonld"},
+    "EntityContextDataGroup": {"@id": "cidme:Context/EntityContextDataGroup.jsonld"},
     "EntityType": {"@id": "cidme:EntityType/EntityType.jsonld"},
     "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
     "Person": {"@id": "cidme:Person/Person.jsonld"},
