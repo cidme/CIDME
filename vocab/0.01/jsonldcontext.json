@@ -30,6 +30,9 @@
     "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
     "externalId": {"@id": "cidme:externalId/externalId.jsonld"},
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
-    "visibilityLevel": {"@id": "cidme:visibilityLevel/visibilityLevel.jsonld"}
+    "visibilityLevel": {
+      "@id": "cidme:visibilityLevel/visibilityLevel.jsonld",
+      "@type": "@vocab"
+    }
   }
 }
