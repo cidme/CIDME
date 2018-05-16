@@ -100,6 +100,18 @@
       "rdfs:label": "Thing"    
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/entityContextData",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME Entity Context Data.",
+      "rdfs:label": "entityContextData",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+      },
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/entityContextDataGroup"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/entityContextVisibilityLevel",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context visibility level.",
