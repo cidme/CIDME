@@ -22,12 +22,30 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/EntityContextDataGroup",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "CIDME Entity Context Data Group.  All data associated with an Entity Context other than that which would fit in another CIDME resource type.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "EntityContextDataGroup",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/EntityContextLink",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "CIDME Entity Context Link.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME datastore a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME datastore.",
+      "rdfs:label": "EntityContextLink",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
       "@type": "rdf:Class",
       "rdfs:comment": "Enumerated CIDME Entity Context visibility level options.",
       "rdfs:label": "EntityContextVisibilityLevel",
       "rdfs:subClassOf": {
-        "@id": "http://schema.org/Enumeration"
+        "@id": "schema:Enumeration"
       }
     },
     {
@@ -36,7 +54,7 @@
       "rdfs:comment": "Enumerated CIDME Entity types.",
       "rdfs:label": "EntityType",
       "rdfs:subClassOf": {
-        "@id": "http://schema.org/Enumeration"
+        "@id": "schema:Enumeration"
       }
     },
     {
@@ -111,12 +129,12 @@
       }
     },
     {
-      "@id": "cidme:externalId",
+      "@id": "http://cidme.net/vocab/0.01/externalId",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context external identifier.  Optional.  An external (to this CIDME datastore) identifier.  If this is to reference another CIDME datastore, the fully-qualified ID should be used, including the datastore ID.",
       "rdfs:label": "entityContextVisibilityLevel",
       "schema:domainIncludes": {
-        "@id": "cidme:EntityContext"
+        "@id": "http://cidme.net/vocab/0.01/EntityContext"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
