@@ -4,10 +4,10 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
   },
-  "@id": "cidme:EntityContextVisibilityLevel",
+  "@id": "cidme:VisibilityLevel",
   "@type": "rdf:Class",
-  "rdfs:comment": "Enumerated CIDME Entity Context visibility level options.",
-  "rdfs:label": "EntityContextVisibilityLevel",
+  "rdfs:comment": "Enumerated CIDME visibility level options.",
+  "rdfs:label": "VisibilityLevel",
   "rdfs:subClassOf": {
     "@id": "http://schema.org/Enumeration"
   }
