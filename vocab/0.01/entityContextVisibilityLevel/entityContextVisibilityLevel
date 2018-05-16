@@ -4,14 +4,14 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
   },
-  "@id": "cidme:visibility",
+  "@id": "cidme:entityContextVisibilityLevel",
   "@type": "rdf:Property",
-  "rdfs:comment": "CIDME Entity Context visibility.",
-  "rdfs:label": "visibility",
+  "rdfs:comment": "CIDME Entity Context visibility level.",
+  "rdfs:label": "entityContextVisibilityLevel",
   "schema:domainIncludes": {
     "@id": "cidme:Context"
   },
   "schema:rangeIncludes": {
-    "@id": "cidme:Visibility"
+    "@id": "cidme:entityContextVisibilityLevel"
   }
 }
