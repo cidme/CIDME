@@ -93,7 +93,7 @@
     {
       "@id": "http://cidme.net/vocab/0.01/MetadataDefault",
       "@type": "rdf:Class",
-      "rdfs:comment": "CIDME Metadata resource - notes whether a resource is a default or not.  Usage is defined only for CIDME resources EntityContext and EntityContextLink.  Usage is not defined for all other CIDME resources, it's usage is left up to the application.",
+      "rdfs:comment": "CIDME Metadata resource - notes whether a resource is a default or not.  Usage is defined only for CIDME resources EntityContext, EntityContextLink, and MetadataLabel.  Usage is not defined for all other CIDME resources, it's usage is left up to the application.",
       "rdfs:label": "MetadataDefault",
       "rdfs:subClassOf": {
         "@id": "http://cidme.net/vocab/0.01/Metadata"
