@@ -6,7 +6,7 @@
     "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
   },
   "@id": "cidme://One-off",
-  "@type": "cidme:Visibility",
-  "rdfs:comment": "A CIDME Entity Context visibility.",
+  "@type": "cidme:EntityContextVisibilityLevel",
+  "rdfs:comment": "A CIDME Entity Context visibility level.",
   "rdfs:label": "One-off"
 }
