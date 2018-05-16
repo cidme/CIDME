@@ -24,7 +24,7 @@
     {
       "@id": "cidme:Metadata"
     }
-  ]
+  ],
   "schema:rangeIncludes": {
     "@id": "cidme:Metadata"
   }
