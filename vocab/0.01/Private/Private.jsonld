@@ -5,7 +5,7 @@
     "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
   },
   "@id": "cidme://Private",
-  "@type": "cidme:EntityContextVisibilityLevel",
-  "rdfs:comment": "A CIDME Entity Context visibility level.",
+  "@type": "cidme:VisibilityLevel",
+  "rdfs:comment": "A CIDME resource visibility level.",
   "rdfs:label": "Private"
 }
