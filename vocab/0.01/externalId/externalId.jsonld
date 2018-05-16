@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
+  },
+  "@id": "cidme:externalId",
+  "@type": "rdf:Property",
+  "rdfs:comment": "CIDME Entity Context external identifier.  Optional.  An external (to this CIDME datastore) identifier.  If this is to reference another CIDME datastore, the fully-qualified ID should be used, including the datastore ID.",
+  "rdfs:label": "entityContextVisibilityLevel",
+  "schema:domainIncludes": {
+    "@id": "cidme:EntityContext"
+  },
+  "schema:rangeIncludes": {
+    "@id": "schema:Text"
+  }
+}
