@@ -16,7 +16,8 @@
     "Place": {"@id": "cidme:Place/Place.jsonld"},
     "Private": {"@id": "cidme:Private/Private.jsonld"},
     "Public": {"@id": "cidme:Public/Public.jsonld"},
-    "Thing": {"@id": "cidme:Thing/Thing.jsonld"},    
+    "Thing": {"@id": "cidme:Thing/Thing.jsonld"},
+    "entityContextData": {"@id": "cidme:entityContextVisibilityLevel/entityContextData.jsonld"},
     "entityContextVisibilityLevel": {"@id": "cidme:entityContextVisibilityLevel/entityContextVisibilityLevel.jsonld"},
     "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
     "externalId": {"@id": "cidme:entityType/externalId.jsonld"}
