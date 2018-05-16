@@ -13,10 +13,10 @@
       "rdfs:label": "Entity"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Context",
+      "@id": "http://cidme.net/vocab/0.01/EntityContext",
       "@type": "rdfs:Class",
       "rdfs:comment": "CIDME Entity Context.  A context represents one aspect of an Entity.",
-      "rdfs:label": "Context",
+      "rdfs:label": "EntityContext",
       "schema:domainIncludes": {
         "@id": "http://cidme.net/vocab/0.01/Entity"
       }
@@ -32,8 +32,8 @@
     },
     {
       "@id": "http://cidme.net/vocab/0.01/One-off",
-      "@type": "http://cidme.net/vocab/0.01/Visibility",
-      "rdfs:comment": "A CIDME Entity Context visibility.",
+      "@type": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
+      "rdfs:comment": "A CIDME Entity Context visibility level.",
       "rdfs:label": "One-off"
     },
     {
@@ -56,13 +56,13 @@
     },
     {
       "@id": "http://cidme.net/vocab/0.01/Private",
-      "@type": "http://cidme.net/vocab/0.01/Visibility",
-      "rdfs:comment": "A CIDME Entity Context visibility.",
+      "@type": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
+      "rdfs:comment": "A CIDME Entity Context visibility level.",
       "rdfs:label": "Private"
     },
     {
       "@id": "http://cidme.net/vocab/0.01/Public",
-      "@type": "http://cidme.net/vocab/0.01/Visibility",
+      "@type": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
       "rdfs:comment": "A CIDME Entity Context visibility.",
       "rdfs:label": "Public"
     },
@@ -73,24 +73,12 @@
       "rdfs:label": "Thing"    
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Visibility",
+      "@id": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
       "@type": "rdf:Class",
-      "rdfs:comment": "Enumerated CIDME Entity Context visibility options.",
-      "rdfs:label": "Visibility",
+      "rdfs:comment": "Enumerated CIDME Entity Context visibility level options.",
+      "rdfs:label": "EntityContextVisibilityLevel",
       "rdfs:subClassOf": {
         "@id": "http://schema.org/Enumeration"
-      }
-    },
-    {
-      "@id": "http://cidme.net/vocab/0.01/default",
-      "@type": "rdf:Property",
-      "rdfs:comment": "Defines whether a CIDME Entity Context is the default for a given entity.",
-      "rdfs:label": "default",
-      "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/Context"
-      },
-      "schema:rangeIncludes": {
-        "@id": "schema:Boolean"
       }
     },
     {
@@ -111,15 +99,15 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/visibility",
+      "@id": "http://cidme.net/vocab/0.01/entityContextVisibilityLevel",
       "@type": "rdf:Property",
-      "rdfs:comment": "CIDME Entity Context visibility.",
-      "rdfs:label": "visibility",
+      "rdfs:comment": "CIDME Entity Context visibility level.",
+      "rdfs:label": "entityContextVisibilityLevel",
       "schema:domainIncludes": {
         "@id": "http://cidme.net/vocab/0.01/Context"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/Visibility"
+        "@id": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel"
       }
     }
   ]
