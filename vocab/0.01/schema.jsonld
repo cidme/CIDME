@@ -49,6 +49,57 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/Metadata",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "CIDME Metadata class.",
+      "rdfs:label": "Metadata"
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/MetadataLabel",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - contains a short textual label.",
+      "rdfs:label": "MetadataLabel",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/MetadataNote",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - contains a textual note.",
+      "rdfs:label": "MetadataNote",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/MetadataType",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - contains a textual type to be applied to the parent resource.  This is not defined by CIDME, it's usage is left up to the application.",
+      "rdfs:label": "MetadataType",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/MetadataStatus",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - contains a status.",
+      "rdfs:label": "MetadataStatus",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/MetadataDefault",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - notes whether a resource is a default or not.  Usage is defined only for CIDME resources EntityContext and EntityContextLink.  Usage is not defined for all other CIDME resources, it's usage is left up to the application.",
+      "rdfs:label": "MetadataDefault",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/One-off",
       "@type": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
       "rdfs:comment": "A CIDME Entity Context visibility level.",
