@@ -12,6 +12,6 @@
     "@id": "cidme:EntityContext"
   },
   "schema:rangeIncludes": {
-    "@id": "cidme:entityContextDataGroup"
+    "@id": "cidme:EntityContextDataGroup"
   }
 }
