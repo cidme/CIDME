@@ -2,7 +2,7 @@
   "@context": {
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "http://schema.org/",
-    "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
+    "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
   },
   "@id": "cidme:entityContextData",
   "@type": "rdf:Property",
