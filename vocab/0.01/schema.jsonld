@@ -22,6 +22,15 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
+      "@type": "rdf:Class",
+      "rdfs:comment": "Enumerated CIDME Entity Context visibility level options.",
+      "rdfs:label": "EntityContextVisibilityLevel",
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/Enumeration"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/EntityType",
       "@type": "rdf:Class",
       "rdfs:comment": "Enumerated CIDME Entity types.",
@@ -73,12 +82,15 @@
       "rdfs:label": "Thing"    
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
-      "@type": "rdf:Class",
-      "rdfs:comment": "Enumerated CIDME Entity Context visibility level options.",
-      "rdfs:label": "EntityContextVisibilityLevel",
-      "rdfs:subClassOf": {
-        "@id": "http://schema.org/Enumeration"
+      "@id": "http://cidme.net/vocab/0.01/entityContextVisibilityLevel",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME Entity Context visibility level.",
+      "rdfs:label": "entityContextVisibilityLevel",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/Context"
+      },
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel"
       }
     },
     {
@@ -99,15 +111,15 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/entityContextVisibilityLevel",
+      "@id": "cidme:externalId",
       "@type": "rdf:Property",
-      "rdfs:comment": "CIDME Entity Context visibility level.",
+      "rdfs:comment": "CIDME Entity Context external identifier.  Optional.  An external (to this CIDME datastore) identifier.  If this is to reference another CIDME datastore, the fully-qualified ID should be used, including the datastore ID.",
       "rdfs:label": "entityContextVisibilityLevel",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/Context"
+        "@id": "cidme:EntityContext"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel"
+        "@id": "schema:Text"
       }
     }
   ]
