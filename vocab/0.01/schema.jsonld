@@ -100,9 +100,18 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/MetadataVisibility",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - note the visibility level of a resource.",
+      "rdfs:label": "MetadataVisibility",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/One-off",
-      "@type": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
-      "rdfs:comment": "A CIDME Entity Context visibility level.",
+      "@type": "http://cidme.net/vocab/0.01/VisibilityLevel",
+      "rdfs:comment": "A CIDME resource visibility level.",
       "rdfs:label": "One-off"
     },
     {
@@ -125,14 +134,14 @@
     },
     {
       "@id": "http://cidme.net/vocab/0.01/Private",
-      "@type": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
-      "rdfs:comment": "A CIDME Entity Context visibility level.",
+      "@type": "http://cidme.net/vocab/0.01/VisibilityLevel",
+      "rdfs:comment": "A CIDME resource visibility level.",
       "rdfs:label": "Private"
     },
     {
       "@id": "http://cidme.net/vocab/0.01/Public",
-      "@type": "http://cidme.net/vocab/0.01/EntityContextVisibilityLevel",
-      "rdfs:comment": "A CIDME Entity Context visibility.",
+      "@type": "http://cidme.net/vocab/0.01/VisibilityLevel",
+      "rdfs:comment": "A CIDME resource visibility level.",
       "rdfs:label": "Public"
     },
     {
@@ -212,7 +221,7 @@
       "@id": "http://cidme.net/vocab/0.01/externalId",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context external identifier.  Optional.  An external (to this CIDME datastore) identifier.  If this is to reference another CIDME datastore, the fully-qualified ID should be used, including the datastore ID.",
-      "rdfs:label": "entityContextVisibilityLevel",
+      "rdfs:label": "externalId",
       "schema:domainIncludes": {
         "@id": "http://cidme.net/vocab/0.01/EntityContext"
       },
@@ -253,19 +262,7 @@
       "rdfs:label": "visibilityLevel",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/Entity"
-        },
-        {
-          "@id": "http://cidme.net/vocab/0.01/EntityContext"
-        },
-        {
-          "@id": "http://cidme.net/vocab/0.01/EntityContextDataGroup"
-        },
-        {
-          "@id": "http://cidme.net/vocab/0.01/EntityContextLink"
-        },
-        {
-          "@id": "http://cidme.net/vocab/0.01/Metadata"
+          "@id": "http://cidme.net/vocab/0.01/MetadataVisibility"
         }
       ],
       "schema:rangeIncludes": {
