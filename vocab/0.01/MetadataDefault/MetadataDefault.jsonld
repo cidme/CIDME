@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
+  },
+  "@graph": [    
+    {
+      "@id": "cidme:MetadataDefault",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - notes whether a resource is a default or not.  Usage is defined only for CIDME resources EntityContext, EntityContextLink, and MetadataLabel.  Usage is not defined for all other CIDME resources, it's usage is left up to the application.",
+      "rdfs:label": "MetadataDefault",
+      "rdfs:subClassOf": {
+        "@id": "cidme:Metadata"
+      }
+    }
+  ]
+}
