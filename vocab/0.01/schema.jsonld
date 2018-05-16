@@ -100,6 +100,23 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/entityContexts",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME Entity Context array (set).",
+      "rdfs:label": "entityContexts",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/Entity"
+        },
+        {
+          "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/entityContextData",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context Data.",
@@ -108,7 +125,19 @@
         "@id": "http://cidme.net/vocab/0.01/EntityContext"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/entityContextDataGroup"
+        "@id": "http://cidme.net/vocab/0.01/EntityContextDataGroup"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/entityContextLinks",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME Entity Context Links.",
+      "rdfs:label": "entityContextLinks",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+      },
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/EntityContextLink"
       }
     },
     {
