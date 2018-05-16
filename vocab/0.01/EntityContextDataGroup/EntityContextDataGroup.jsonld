@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
+  },
+  "@graph": [    
+    {
+      "@id": "cidme:EntityContextDataGroup",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "CIDME Entity Context Data Group.  All data associated with an Entity Context other than that which would fit in another CIDME resource type.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "EntityContextDataGroup",
+      "schema:domainIncludes": {
+        "@id": "cidme:EntityContext"
+      }
+    }
+  ]
+}
