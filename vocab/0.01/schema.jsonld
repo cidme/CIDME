@@ -271,7 +271,6 @@
       "schema:rangeIncludes": {
         "@id": "http://cidme.net/vocab/0.01/VisibilityLevel"
       }
-    },
-
+    }
   ]
 }
