@@ -2,8 +2,8 @@
   "@context": {
     "type": "@type",
     "id": "@id",
-    "@vocab": "http://cidme.net/vocab/0.1/",
-    "cidme": "http://cidme.net/vocab/0.1/",
+    "@vocab": "http://cidme.net/vocab/0.01/",
+    "cidme": "http://cidme.net/vocab/0.01/",
     "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
     "EntityContext": {"@id": "cidme:EntityContext/EntityContext.jsonld"},
     "EntityContextLink": {"@id": "cidme:EntityContextLink/EntityContextLink.jsonld"},
