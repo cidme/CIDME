@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.1/jsonldcontext.json"
+  },
+  "@graph": [    
+    {
+      "@id": "cidme:MetadataLabel",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - contains a short textual label.",
+      "rdfs:label": "MetadataLabel",
+      "rdfs:subClassOf": {
+        "@id": "cidme:Metadata"
+      }
+    }
+  ]
+}
