@@ -27,7 +27,10 @@
     "entityContexts": {"@id": "cidme:entityContexts/entityContexts.jsonld"},
     "entityContextData": {"@id": "cidme:entityContextData/entityContextData.jsonld"},
     "entityContextLinks": {"@id": "cidme:entityContextLinks/entityContextLinks.jsonld"},
-    "entityType": {"@id": "cidme:entityType/entityType.jsonld"},
+    "entityType": {
+      "@id": "cidme:entityType/entityType.jsonld",
+      "@type": "@vocab"
+    },
     "externalId": {"@id": "cidme:externalId/externalId.jsonld"},
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
     "visibilityLevel": {
