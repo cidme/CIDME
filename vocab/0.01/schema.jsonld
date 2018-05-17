@@ -73,6 +73,33 @@
       "rdfs:label": "Metadata"
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/MetadataDateTime",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource dateTime - Adds a date and/or time component to a resource.  This resource type is used to indicate an instant in time.  For a date/time range/interval (start/end) use MetadataDateTimeRange instead.",
+      "rdfs:label": "MetadataDateTime",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/MetadataDateTimeRange",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource date/time range - Adds a date and/or time range component to a resource.  This resource type is used to indicate a date/time range/interval (start/end), for an instant in date/time, use MetadataDateTime instead.",
+      "rdfs:label": "MetadataDateTimeRange",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/MetadataDefault",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource - notes whether a resource is a default or not.  Usage is defined only for CIDME resources EntityContext, EntityContextLink, and MetadataLabel.  Usage is not defined for all other CIDME resources, it's usage is left up to the application.",
+      "rdfs:label": "MetadataDefault",
+      "rdfs:subClassOf": {
+        "@id": "http://cidme.net/vocab/0.01/Metadata"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/MetadataLabel",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - contains a short textual label.",
@@ -91,15 +118,6 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataType",
-      "@type": "rdf:Class",
-      "rdfs:comment": "CIDME Metadata resource - contains a textual type to be applied to the parent resource.  This is not defined by CIDME, it's usage is left up to the application.",
-      "rdfs:label": "MetadataType",
-      "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
-      }
-    },
-    {
       "@id": "http://cidme.net/vocab/0.01/MetadataStatus",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - contains a status.",
@@ -109,10 +127,10 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataDefault",
+      "@id": "http://cidme.net/vocab/0.01/MetadataType",
       "@type": "rdf:Class",
-      "rdfs:comment": "CIDME Metadata resource - notes whether a resource is a default or not.  Usage is defined only for CIDME resources EntityContext, EntityContextLink, and MetadataLabel.  Usage is not defined for all other CIDME resources, it's usage is left up to the application.",
-      "rdfs:label": "MetadataDefault",
+      "rdfs:comment": "CIDME Metadata resource - contains a textual type to be applied to the parent resource.  This is not defined by CIDME, it's usage is left up to the application.",
+      "rdfs:label": "MetadataType",
       "rdfs:subClassOf": {
         "@id": "http://cidme.net/vocab/0.01/Metadata"
       }
@@ -193,6 +211,20 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/dateTime",
+      "@type": "rdf:Class",
+      "rdfs:comment": "A date/time in ISO 8601 format.",
+      "rdfs:label": "dateTime",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataDateTime"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "xsd:dateTimeStamp"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/default",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource metadata default option.  Boolean value which notes whether a resource is a default (true) or not (false).",
@@ -205,7 +237,21 @@
       "schema:rangeIncludes": {
         "@id": "http://schema.org/Boolean"
       }
-    },    
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/endDateTime",
+      "@type": "rdf:Class",
+      "rdfs:comment": "An ending date/time in ISO 8601 format.  May also be left null to indicate no, or no specific, end date/time.",
+      "rdfs:label": "endDateTime",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataDateTimeRange"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "xsd:dateTimeStamp"
+      }
+    },
     {
       "@id": "http://cidme.net/vocab/0.01/entityContexts",
       "@type": "rdf:Property",
@@ -329,7 +375,21 @@
       "schema:rangeIncludes": {
         "@id": "rdfs:comment"
       }
-    },    
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/startDateTime",
+      "@type": "rdf:Class",
+      "rdfs:comment": "A starting date/time in ISO 8601 format.  May also be left null to indicate no specific start date/time.",
+      "rdfs:label": "startDateTime",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataDateTimeRange"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "xsd:dateTimeStamp"
+      }
+    },
     {
       "@id": "http://cidme.net/vocab/0.01/status",
       "@type": "rdf:Property",
