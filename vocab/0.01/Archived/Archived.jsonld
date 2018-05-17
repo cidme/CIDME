@@ -1,0 +1,11 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
+  },
+  "@id": "cidme://Archived",
+  "@type": "cidme:VisibilityLevel",
+  "rdfs:comment": "A CIDME resource status option - archived.  The resource has been archived and is not available for general use.",
+  "rdfs:label": "Archived"
+}
