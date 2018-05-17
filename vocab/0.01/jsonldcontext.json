@@ -13,6 +13,8 @@
     "EntityType": {"@id": "cidme:EntityType/EntityType.jsonld"},
     "Inactive": {"@id": "cidme:Inactive/Inative.jsonld"},
     "Metadata": {"@id": "cidme:Metadata/Metadata.jsonld"},
+    "MetadataDateTime": {"@id": "cidme:MetadataDateTime/MetadataDateTime.jsonld"},
+    "MetadataDateTimeRange": {"@id": "cidme:MetadataDateTimeRange/MetadataDateTimeRange.jsonld"},
     "MetadataNote": {"@id": "cidme:MetadataNote/MetadataNote.jsonld"},
     "MetadataLabel": {"@id": "cidme:MetadataLabel/MetadataLabel.jsonld"},
     "MetadataType": {"@id": "cidme:MetadataType/MetadataType.jsonld"},
@@ -29,7 +31,9 @@
     "Staging": {"@id": "cidme:Staging/Staging.jsonld"},
     "StatusOption": {"@id": "cidme:StatusOption/StatusOption.jsonld"},
     "VisibilityLevel": {"@id": "cidme:VisibilityLevel/VisibilityLevel.jsonld"},
+    "dateTime": {"@id": "cidme:dateTime/dateTime.jsonld"},
     "default": {"@id": "cidme:default/default.jsonld"},
+    "endDateTime": {"@id": "cidme:endDateTime/endDateTime.jsonld"},
     "entityContexts": {"@id": "cidme:entityContexts/entityContexts.jsonld"},
     "entityContextData": {"@id": "cidme:entityContextData/entityContextData.jsonld"},
     "entityContextLinks": {"@id": "cidme:entityContextLinks/entityContextLinks.jsonld"},
@@ -41,6 +45,7 @@
     "label": {"@id": "cidme:label/label.jsonld"},
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
     "note": {"@id": "cidme:note/note.jsonld"},
+    "startDateTime": {"@id": "cidme:startDateTime/startDateTime.jsonld"},
     "status": {
       "@id": "cidme:status/status.jsonld",
       "@type": "@vocab"
