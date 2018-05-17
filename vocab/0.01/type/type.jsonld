@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
+  },
+  "@id": "cidme:type",
+  "@type": "rdf:Property",
+  "rdfs:comment": "Contains a textual type to be applied to the parent resource.  This may be used for classification purposes.  This is not defined by CIDME, it's usage is left up to the application.",
+  "rdfs:label": "type",  
+  "schema:domainIncludes": {
+      "@id": "cidme:MetadataType"
+  },
+  "schema:rangeIncludes": {
+    "@id": "schema:Text"
+  }
+}
