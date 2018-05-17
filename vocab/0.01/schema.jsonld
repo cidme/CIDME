@@ -347,8 +347,7 @@
     {
       "@id": "http://cidme.net/vocab/0.01/type",
       "@type": "rdf:Property",
-      "rdfs:comment": "Contains a textual type to be applied to the parent resource.  This may be used for classification purposes.
-  This is not defined by CIDME, it's usage is left up to the application",
+      "rdfs:comment": "Contains a textual type to be applied to the parent resource.  This may be used for classification purposes.  This is not defined by CIDME, it's usage is left up to the application",
       "rdfs:label": "type",
       "schema:domainIncludes": [
         {
