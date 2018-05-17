@@ -334,7 +334,7 @@
       "@id": "http://cidme.net/vocab/0.01/status",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource status.  Notes the status of a given resource (staging, active, inactive, archived).",
-      "rdfs:label": "note",
+      "rdfs:label": "status",
       "schema:domainIncludes": [
         {
           "@id": "http://cidme.net/vocab/0.01/MetadataStatus"
@@ -349,7 +349,7 @@
       "@type": "rdf:Property",
       "rdfs:comment": "Contains a textual type to be applied to the parent resource.  This may be used for classification purposes.
   This is not defined by CIDME, it's usage is left up to the application",
-      "rdfs:label": "note",
+      "rdfs:label": "type",
       "schema:domainIncludes": [
         {
           "@id": "http://cidme.net/vocab/0.01/MetadataType"
