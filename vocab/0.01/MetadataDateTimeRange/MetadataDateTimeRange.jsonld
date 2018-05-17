@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
+  },
+  "@graph": [    
+    {
+      "@id": "cidme:MetadataDateTimeRange",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Metadata resource date/time range - Adds a date and/or time range component to a resource.  This resource type is used to indicate a date/time range/interval (start/end), for an instant in date/time, use MetadataDateTime instead.",
+      "rdfs:label": "MetadataDateTimeRange",
+      "rdfs:subClassOf": {
+        "@id": "cidme:Metadata"
+      }
+    }
+  ]
+}
