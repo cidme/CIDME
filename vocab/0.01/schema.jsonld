@@ -7,6 +7,18 @@
  },
  "@graph": [
     {
+      "@id": "http://cidme.net/vocab/0.01/Active",
+      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "rdfs:comment": "A CIDME resource status option - active.  The resource is available for general use.",
+      "rdfs:label": "Active"
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/Archived",
+      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "rdfs:comment": "A CIDME resource status option - archived.  The resource has been archived and is not available for general use.",
+      "rdfs:label": "Archived"
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/Entity",
       "@type": "rdfs:Class",
       "rdfs:comment": "Top-level CIDME object.",
@@ -47,6 +59,12 @@
       "rdfs:subClassOf": {
         "@id": "schema:Enumeration"
       }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/Inactive",
+      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "rdfs:comment": "A CIDME resource status option - inactive.  The resource is not available for general use.",
+      "rdfs:label": "Inactive"
     },
     {
       "@id": "http://cidme.net/vocab/0.01/Metadata",
@@ -145,6 +163,12 @@
       "rdfs:label": "Public"
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/Staging",
+      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "rdfs:comment": "A CIDME resource status option - staging.  The resource is being readied and not yet available for general use.",
+      "rdfs:label": "Staging"
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/Thing",
       "@type": "http://cidme.net/vocab/0.01/EntityType",
       "rdfs:comment": "An entityType representing a thing.  For CIDME, a thing is defined as any thing other than a person, organization, or place/location.",
@@ -155,6 +179,15 @@
       "@type": "rdf:Class",
       "rdfs:comment": "Enumerated CIDME resource visibility level options.",
       "rdfs:label": "VisibilityLevel",
+      "rdfs:subClassOf": {
+        "@id": "schema:Enumeration"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/StatusOption",
+      "@type": "rdf:Class",
+      "rdfs:comment": "Enumerated CIDME resource status options.",
+      "rdfs:label": "StatusOption",
       "rdfs:subClassOf": {
         "@id": "schema:Enumeration"
       }
