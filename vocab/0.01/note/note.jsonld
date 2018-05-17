@@ -5,7 +5,7 @@
     "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
   },
   "@id": "cidme:note",
-  "@type": "rdf:Property"
+  "@type": "rdf:Property",
   "rdfs:comment": "CIDME resource label.  Contains a textual note.",
   "rdfs:label": "note",  
   "schema:domainIncludes": {
