@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
+  },
+  "@id": "cidme:startDateTime",
+  "@type": "rdf:Property",
+  "rdfs:comment": "A starting date/time in ISO 8601 format.  May also be left null to indicate no specific start date/time.",
+  "rdfs:label": "startDateTime",
+  "schema:domainIncludes": {
+    "@id": "http://cidme.net/vocab/0.01/MetadataDateTimeRange"
+  },
+  "schema:rangeIncludes": {
+    "@id": "xsd:dateTimeStamp"
+  }
+}
