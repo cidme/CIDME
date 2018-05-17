@@ -36,7 +36,10 @@
     "label": {"@id": "cidme:label/label.jsonld"},
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
     "note": {"@id": "cidme:note/note.jsonld"},
-    "status": {"@id": "cidme:status/status.jsonld"},
+    "status": {
+      "@id": "cidme:status/status.jsonld",
+      "@type": "@vocab"
+    },
     "type": {"@id": "cidme:type/type.jsonld"},
     "visibilityLevel": {
       "@id": "cidme:visibilityLevel/visibilityLevel.jsonld",
