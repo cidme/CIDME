@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
+  },
+  "@id": "cidme:default",
+  "@type": "rdf:Property"
+  "rdfs:comment": "CIDME resource metadata default option.  Boolean value which notes whether a resource is a default (true) or not (false).",
+  "rdfs:label": "default",  
+  "schema:domainIncludes": {
+      "@id": "cidme:MetadataDefault"
+  },
+  "schema:rangeIncludes": {
+    "@id": "http://schema.org/Boolean"
+  }
+}
