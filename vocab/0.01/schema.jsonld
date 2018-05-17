@@ -268,6 +268,20 @@
       "schema:rangeIncludes": {
         "@id": "http://cidme.net/vocab/0.01/VisibilityLevel"
       }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/default",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME resource metadata default option.  Boolean value which notes whether a resource is a default (true) or not (false).",
+      "rdfs:label": "default",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataDefault"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "http://schema.org/Boolean"
+      }
     }
   ]
 }
