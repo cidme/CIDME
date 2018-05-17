@@ -33,7 +33,9 @@
       "@type": "@vocab"
     },
     "externalId": {"@id": "cidme:externalId/externalId.jsonld"},
+    "label": {"@id": "cidme:label/label.jsonld"},
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
+    "note": {"@id": "cidme:note/note.jsonld"},
     "visibilityLevel": {
       "@id": "cidme:visibilityLevel/visibilityLevel.jsonld",
       "@type": "@vocab"
