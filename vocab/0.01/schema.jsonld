@@ -160,6 +160,20 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/default",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME resource metadata default option.  Boolean value which notes whether a resource is a default (true) or not (false).",
+      "rdfs:label": "default",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataDefault"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "http://schema.org/Boolean"
+      }
+    },    
+    {
       "@id": "http://cidme.net/vocab/0.01/entityContexts",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context array (set).",
@@ -230,6 +244,20 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/label",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME resource label.  Contains a short textual label.",
+      "rdfs:label": "label",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataLabel"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "rdfs:label"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/metadata",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Metadata.",
@@ -256,6 +284,20 @@
       }
     },
     {
+      "@id": "http://cidme.net/vocab/0.01/note",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME resource label.  Contains a textual note.",
+      "rdfs:label": "note",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataNote"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "rdfs:comment"
+      }
+    },    
+    {
       "@id": "http://cidme.net/vocab/0.01/visibilityLevel",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource visibility level.",
@@ -268,20 +310,6 @@
       "schema:rangeIncludes": {
         "@id": "http://cidme.net/vocab/0.01/VisibilityLevel"
       }
-    },
-    {
-      "@id": "http://cidme.net/vocab/0.01/default",
-      "@type": "rdf:Property",
-      "rdfs:comment": "CIDME resource metadata default option.  Boolean value which notes whether a resource is a default (true) or not (false).",
-      "rdfs:label": "default",
-      "schema:domainIncludes": [
-        {
-          "@id": "http://cidme.net/vocab/0.01/MetadataDefault"
-        }
-      ],
-      "schema:rangeIncludes": {
-        "@id": "http://schema.org/Boolean"
-      }
-    }
+    }    
   ]
 }
