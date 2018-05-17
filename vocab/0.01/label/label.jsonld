@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.01/jsonldcontext.json"
+  },
+  "@id": "cidme:label",
+  "@type": "rdf:Property"
+  "rdfs:comment": "CIDME resource label.  Contains a short textual label.",
+  "rdfs:label": "label",  
+  "schema:domainIncludes": {
+      "@id": "cidme:MetadataLabel"
+  },
+  "schema:rangeIncludes": {
+    "@id": "rdfs:label"
+  }
+}
