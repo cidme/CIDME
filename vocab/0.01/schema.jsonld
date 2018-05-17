@@ -298,6 +298,35 @@
       }
     },    
     {
+      "@id": "http://cidme.net/vocab/0.01/status",
+      "@type": "rdf:Property",
+      "rdfs:comment": "CIDME resource status.  Notes the status of a given resource (staging, active, inactive, archived).",
+      "rdfs:label": "note",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataStatus"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/0.01/StatusOption"
+      }
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.01/type",
+      "@type": "rdf:Property",
+      "rdfs:comment": "Contains a textual type to be applied to the parent resource.  This may be used for classification purposes.
+  This is not defined by CIDME, it's usage is left up to the application",
+      "rdfs:label": "note",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.01/MetadataType"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "schema:Text"
+      }
+    },
+    {
       "@id": "http://cidme.net/vocab/0.01/visibilityLevel",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource visibility level.",
