@@ -24,6 +24,7 @@
     "Public": {"@id": "cidme:Public/Public.jsonld"},
     "Thing": {"@id": "cidme:Thing/Thing.jsonld"},
     "VisibilityLevel": {"@id": "cidme:VisibilityLevel/VisibilityLevel.jsonld"},
+    "default": {"@id": "cidme:default/default.jsonld"},
     "entityContexts": {"@id": "cidme:entityContexts/entityContexts.jsonld"},
     "entityContextData": {"@id": "cidme:entityContextData/entityContextData.jsonld"},
     "entityContextLinks": {"@id": "cidme:entityContextLinks/entityContextLinks.jsonld"},
