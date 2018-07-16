@@ -7,52 +7,52 @@
  },
  "@graph": [
     {
-      "@id": "http://cidme.net/vocab/0.01/Active",
-      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "@id": "http://cidme.net/vocab/0.1.0/Active",
+      "@type": "http://cidme.net/vocab/0.1.0/StatusOption",
       "rdfs:comment": "A CIDME resource status option - active.  The resource is available for general use.",
       "rdfs:label": "Active"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Archived",
-      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "@id": "http://cidme.net/vocab/0.1.0/Archived",
+      "@type": "http://cidme.net/vocab/0.1.0/StatusOption",
       "rdfs:comment": "A CIDME resource status option - archived.  The resource has been archived and is not available for general use.",
       "rdfs:label": "Archived"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Entity",
+      "@id": "http://cidme.net/vocab/0.1.0/Entity",
       "@type": "rdfs:Class",
       "rdfs:comment": "Top-level CIDME object.",
       "rdfs:label": "Entity"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/EntityContext",
+      "@id": "http://cidme.net/vocab/0.1.0/EntityContext",
       "@type": "rdfs:Class",
       "rdfs:comment": "CIDME Entity Context.  A context represents one aspect of an Entity.",
       "rdfs:label": "EntityContext",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/Entity"
+        "@id": "http://cidme.net/vocab/0.1.0/Entity"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/EntityContextDataGroup",
+      "@id": "http://cidme.net/vocab/0.1.0/EntityContextDataGroup",
       "@type": "rdfs:Class",
       "rdfs:comment": "CIDME Entity Context Data Group.  All data associated with an Entity Context other than that which would fit in another CIDME resource type.  Multiple data can be grouped together for aggregation purposes.",
       "rdfs:label": "EntityContextDataGroup",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/EntityContextLink",
+      "@id": "http://cidme.net/vocab/0.1.0/EntityContextLink",
       "@type": "rdfs:Class",
       "rdfs:comment": "CIDME Entity Context Link.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME datastore a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME datastore.",
       "rdfs:label": "EntityContextLink",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/EntityType",
+      "@id": "http://cidme.net/vocab/0.1.0/EntityType",
       "@type": "rdf:Class",
       "rdfs:comment": "Enumerated CIDME Entity types.",
       "rdfs:label": "EntityType",
@@ -61,139 +61,139 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Inactive",
-      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "@id": "http://cidme.net/vocab/0.1.0/Inactive",
+      "@type": "http://cidme.net/vocab/0.1.0/StatusOption",
       "rdfs:comment": "A CIDME resource status option - inactive.  The resource is not available for general use.",
       "rdfs:label": "Inactive"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Metadata",
+      "@id": "http://cidme.net/vocab/0.1.0/Metadata",
       "@type": "rdfs:Class",
       "rdfs:comment": "CIDME Metadata class.",
       "rdfs:label": "Metadata"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataDateTime",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataDateTime",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource dateTime - Adds a date and/or time component to a resource.  This resource type is used to indicate an instant in time.  For a date/time range/interval (start/end) use MetadataDateTimeRange instead.",
       "rdfs:label": "MetadataDateTime",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataDateTimeRange",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataDateTimeRange",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource date/time range - Adds a date and/or time range component to a resource.  This resource type is used to indicate a date/time range/interval (start/end), for an instant in date/time, use MetadataDateTime instead.",
       "rdfs:label": "MetadataDateTimeRange",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataDefault",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataDefault",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - notes whether a resource is a default or not.  Usage is defined only for CIDME resources EntityContext, EntityContextLink, and MetadataLabel.  Usage is not defined for all other CIDME resources, it's usage is left up to the application.",
       "rdfs:label": "MetadataDefault",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataLabel",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataLabel",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - contains a short textual label.",
       "rdfs:label": "MetadataLabel",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataNote",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataNote",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - contains a textual note.",
       "rdfs:label": "MetadataNote",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataStatus",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataStatus",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - contains a status.",
       "rdfs:label": "MetadataStatus",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataType",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataType",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - contains a textual type to be applied to the parent resource.  This is not defined by CIDME, it's usage is left up to the application.",
       "rdfs:label": "MetadataType",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/MetadataVisibility",
+      "@id": "http://cidme.net/vocab/0.1.0/MetadataVisibility",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Metadata resource - note the visibility level of a resource.",
       "rdfs:label": "MetadataVisibility",
       "rdfs:subClassOf": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/One-off",
-      "@type": "http://cidme.net/vocab/0.01/VisibilityLevel",
+      "@id": "http://cidme.net/vocab/0.1.0/One-off",
+      "@type": "http://cidme.net/vocab/0.1.0/VisibilityLevel",
       "rdfs:comment": "A CIDME resource visibility level.",
       "rdfs:label": "One-off"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Organization",
-      "@type": "http://cidme.net/vocab/0.01/EntityType",
+      "@id": "http://cidme.net/vocab/0.1.0/Organization",
+      "@type": "http://cidme.net/vocab/0.1.0/EntityType",
       "rdfs:comment": "An entityType representing an Organization.",
       "rdfs:label": "Organization"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Person",
-      "@type": "http://cidme.net/vocab/0.01/EntityType",
+      "@id": "http://cidme.net/vocab/0.1.0/Person",
+      "@type": "http://cidme.net/vocab/0.1.0/EntityType",
       "rdfs:comment": "An entityType representing a Person.",
       "rdfs:label": "Person"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Place",
-      "@type": "http://cidme.net/vocab/0.01/EntityType",
+      "@id": "http://cidme.net/vocab/0.1.0/Place",
+      "@type": "http://cidme.net/vocab/0.1.0/EntityType",
       "rdfs:comment": "An entityType representing a place or location.",
       "rdfs:label": "Place"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Private",
-      "@type": "http://cidme.net/vocab/0.01/VisibilityLevel",
+      "@id": "http://cidme.net/vocab/0.1.0/Private",
+      "@type": "http://cidme.net/vocab/0.1.0/VisibilityLevel",
       "rdfs:comment": "A CIDME resource visibility level.",
       "rdfs:label": "Private"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Public",
-      "@type": "http://cidme.net/vocab/0.01/VisibilityLevel",
+      "@id": "http://cidme.net/vocab/0.1.0/Public",
+      "@type": "http://cidme.net/vocab/0.1.0/VisibilityLevel",
       "rdfs:comment": "A CIDME resource visibility level.",
       "rdfs:label": "Public"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Staging",
-      "@type": "http://cidme.net/vocab/0.01/StatusOption",
+      "@id": "http://cidme.net/vocab/0.1.0/Staging",
+      "@type": "http://cidme.net/vocab/0.1.0/StatusOption",
       "rdfs:comment": "A CIDME resource status option - staging.  The resource is being readied and not yet available for general use.",
       "rdfs:label": "Staging"
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/Thing",
-      "@type": "http://cidme.net/vocab/0.01/EntityType",
+      "@id": "http://cidme.net/vocab/0.1.0/Thing",
+      "@type": "http://cidme.net/vocab/0.1.0/EntityType",
       "rdfs:comment": "An entityType representing a thing.  For CIDME, a thing is defined as any thing other than a person, organization, or place/location.",
       "rdfs:label": "Thing"    
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/VisibilityLevel",
+      "@id": "http://cidme.net/vocab/0.1.0/VisibilityLevel",
       "@type": "rdf:Class",
       "rdfs:comment": "Enumerated CIDME resource visibility level options.",
       "rdfs:label": "VisibilityLevel",
@@ -202,7 +202,7 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/StatusOption",
+      "@id": "http://cidme.net/vocab/0.1.0/StatusOption",
       "@type": "rdf:Class",
       "rdfs:comment": "Enumerated CIDME resource status options.",
       "rdfs:label": "StatusOption",
@@ -211,13 +211,13 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/dateTime",
+      "@id": "http://cidme.net/vocab/0.1.0/dateTime",
       "@type": "rdf:Class",
       "rdfs:comment": "A date/time in ISO 8601 format.",
       "rdfs:label": "dateTime",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataDateTime"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataDateTime"
         }
       ],
       "schema:rangeIncludes": {
@@ -225,13 +225,13 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/default",
+      "@id": "http://cidme.net/vocab/0.1.0/default",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource metadata default option.  Boolean value which notes whether a resource is a default (true) or not (false).",
       "rdfs:label": "default",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataDefault"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataDefault"
         }
       ],
       "schema:rangeIncludes": {
@@ -239,13 +239,13 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/endDateTime",
+      "@id": "http://cidme.net/vocab/0.1.0/endDateTime",
       "@type": "rdf:Class",
       "rdfs:comment": "An ending date/time in ISO 8601 format.  May also be left null to indicate no, or no specific, end date/time.",
       "rdfs:label": "endDateTime",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataDateTimeRange"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataDateTimeRange"
         }
       ],
       "schema:rangeIncludes": {
@@ -253,83 +253,83 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/entityContexts",
+      "@id": "http://cidme.net/vocab/0.1.0/entityContexts",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context array (set).",
       "rdfs:label": "entityContexts",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/Entity"
+          "@id": "http://cidme.net/vocab/0.1.0/Entity"
         },
         {
-          "@id": "http://cidme.net/vocab/0.01/EntityContext"
+          "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
         }
       ],
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/entityContextData",
+      "@id": "http://cidme.net/vocab/0.1.0/entityContextData",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context Data.",
       "rdfs:label": "entityContextData",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContextDataGroup"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContextDataGroup"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/entityContextLinks",
+      "@id": "http://cidme.net/vocab/0.1.0/entityContextLinks",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context Links.",
       "rdfs:label": "entityContextLinks",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContextLink"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContextLink"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/entityType",
+      "@id": "http://cidme.net/vocab/0.1.0/entityType",
       "@type": "rdf:Property",
       "rdfs:comment": "The CIDME Entity type.",
       "rdfs:label": "entityType",
       "schema:domainIncludes": [
         {
-        "@id": "http://cidme.net/vocab/0.01/Entity"
+        "@id": "http://cidme.net/vocab/0.1.0/Entity"
         },
         {
-        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
         }
       ],
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityType"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityType"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/externalId",
+      "@id": "http://cidme.net/vocab/0.1.0/externalId",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Entity Context external identifier.  Optional.  An external (to this CIDME datastore) identifier.  If this is to reference another CIDME datastore, the fully-qualified ID should be used, including the datastore ID.",
       "rdfs:label": "externalId",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/EntityContext"
+        "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/label",
+      "@id": "http://cidme.net/vocab/0.1.0/label",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource label.  Contains a short textual label.",
       "rdfs:label": "label",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataLabel"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataLabel"
         }
       ],
       "schema:rangeIncludes": {
@@ -337,39 +337,39 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/metadata",
+      "@id": "http://cidme.net/vocab/0.1.0/metadata",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME Metadata.",
       "rdfs:label": "metadata",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/Entity"
+          "@id": "http://cidme.net/vocab/0.1.0/Entity"
         },
         {
-          "@id": "http://cidme.net/vocab/0.01/EntityContext"
+          "@id": "http://cidme.net/vocab/0.1.0/EntityContext"
         },
         {
-          "@id": "http://cidme.net/vocab/0.01/EntityContextLink"
+          "@id": "http://cidme.net/vocab/0.1.0/EntityContextLink"
         },
         {
-          "@id": "http://cidme.net/vocab/0.01/EntityContextDataGroup"
+          "@id": "http://cidme.net/vocab/0.1.0/EntityContextDataGroup"
         },
         {
-          "@id": "http://cidme.net/vocab/0.01/Metadata"
+          "@id": "http://cidme.net/vocab/0.1.0/Metadata"
         }
       ],
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/Metadata"
+        "@id": "http://cidme.net/vocab/0.1.0/Metadata"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/note",
+      "@id": "http://cidme.net/vocab/0.1.0/note",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource label.  Contains a textual note.",
       "rdfs:label": "note",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataNote"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataNote"
         }
       ],
       "schema:rangeIncludes": {
@@ -377,13 +377,13 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/startDateTime",
+      "@id": "http://cidme.net/vocab/0.1.0/startDateTime",
       "@type": "rdf:Class",
       "rdfs:comment": "A starting date/time in ISO 8601 format.  May also be left null to indicate no specific start date/time.",
       "rdfs:label": "startDateTime",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataDateTimeRange"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataDateTimeRange"
         }
       ],
       "schema:rangeIncludes": {
@@ -391,27 +391,27 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/status",
+      "@id": "http://cidme.net/vocab/0.1.0/status",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource status.  Notes the status of a given resource (staging, active, inactive, archived).",
       "rdfs:label": "status",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataStatus"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataStatus"
         }
       ],
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/StatusOption"
+        "@id": "http://cidme.net/vocab/0.1.0/StatusOption"
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/type",
+      "@id": "http://cidme.net/vocab/0.1.0/type",
       "@type": "rdf:Property",
       "rdfs:comment": "Contains a textual type to be applied to the parent resource.  This may be used for classification purposes.  This is not defined by CIDME, it's usage is left up to the application",
       "rdfs:label": "type",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataType"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataType"
         }
       ],
       "schema:rangeIncludes": {
@@ -419,17 +419,17 @@
       }
     },
     {
-      "@id": "http://cidme.net/vocab/0.01/visibilityLevel",
+      "@id": "http://cidme.net/vocab/0.1.0/visibilityLevel",
       "@type": "rdf:Property",
       "rdfs:comment": "CIDME resource visibility level.",
       "rdfs:label": "visibilityLevel",
       "schema:domainIncludes": [
         {
-          "@id": "http://cidme.net/vocab/0.01/MetadataVisibility"
+          "@id": "http://cidme.net/vocab/0.1.0/MetadataVisibility"
         }
       ],
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/0.01/VisibilityLevel"
+        "@id": "http://cidme.net/vocab/0.1.0/VisibilityLevel"
       }
     }    
   ]
