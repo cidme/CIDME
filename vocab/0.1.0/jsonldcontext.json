@@ -2,8 +2,8 @@
   "@context": {
     "type": "@type",
     "id": "@id",
-    "@vocab": "http://cidme.net/vocab/0.01/",
-    "cidme": "http://cidme.net/vocab/0.01/",
+    "@vocab": "http://cidme.net/vocab/0.1.0/",
+    "cidme": "http://cidme.net/vocab/0.1.0/",
     "Active": {"@id": "cidme:Active/Active.jsonld"},
     "Archived": {"@id": "cidme:Archived/Archived.jsonld"},
     "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
