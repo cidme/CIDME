@@ -5,7 +5,7 @@
     "cidme": "http://cidme.net/vocab/0.1.0/jsonldcontext.json"
   },
   "@id": "cidme://Inactive",
-  "@type": "cidme:VisibilityLevel",
+  "@type": "cidme:StatusOption",
   "rdfs:comment": "A CIDME resource status option - inactive.  The resource is not available for general use.",
   "rdfs:label": "Inactive"
 }
