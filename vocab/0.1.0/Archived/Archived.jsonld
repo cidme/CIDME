@@ -5,7 +5,7 @@
     "cidme": "http://cidme.net/vocab/0.1.0/jsonldcontext.json"
   },
   "@id": "cidme://Archived",
-  "@type": "cidme:VisibilityLevel",
+  "@type": "cidme:StatusOption",
   "rdfs:comment": "A CIDME resource status option - archived.  The resource has been archived and is not available for general use.",
   "rdfs:label": "Archived"
 }
