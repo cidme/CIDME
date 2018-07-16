@@ -4,7 +4,7 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1.0/jsonldcontext.json"
   },
-  "@id": "cidme://Place",
+  "@id": "cidme:Place",
   "@type": "cidme:EntityType",
   "rdfs:comment": "An entityType representing a place or location.",
   "rdfs:label": "Place"
