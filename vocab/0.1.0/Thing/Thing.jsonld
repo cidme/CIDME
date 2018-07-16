@@ -4,7 +4,7 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1.0/jsonldcontext.json"
   },
-  "@id": "cidme://Thing",
+  "@id": "cidme:Thing",
   "@type": "cidme:EntityType",
   "rdfs:comment": "An entityType representing a thing.  For CIDME, a thing is defined as any thing other than a person, organization, or place/location.",
   "rdfs:label": "Thing"
