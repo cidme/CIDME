@@ -4,7 +4,7 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1.0/jsonldcontext.json"
   },
-  "@id": "cidme://Organization",
+  "@id": "cidme:Organization",
   "@type": "cidme:EntityType",
   "rdfs:comment": "An entityType representing an Organization.",
   "rdfs:label": "Organization"
