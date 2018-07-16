@@ -4,7 +4,7 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1.0/jsonldcontext.json"
   },
-  "@id": "cidme://Private",
+  "@id": "cidme:Private",
   "@type": "cidme:VisibilityLevel",
   "rdfs:comment": "A CIDME resource visibility level.",
   "rdfs:label": "Private"
