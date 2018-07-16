@@ -5,7 +5,7 @@
     "schema": "http://schema.org/",
     "cidme": "http://cidme.net/vocab/0.1.0/jsonldcontext.json"
   },
-  "@id": "cidme://One-off",
+  "@id": "cidme:One-off",
   "@type": "cidme:VisibilityLevel",
   "rdfs:comment": "A CIDME resource visibility level.",
   "rdfs:label": "One-off"
