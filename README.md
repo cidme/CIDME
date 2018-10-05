@@ -1,3 +1,6 @@
+![CIDME project banner logo - dual](logos/cidme-banner_logo-dual-750x150.png "CIDME project banner logo - dual")
+
+
 # CIDME (_Pronounced SID-MEE_)
 Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine for management of contextualized identity information.
 
