@@ -1,6 +1,7 @@
 ![CIDME project banner logo - dual](logos/cidme-banner_logo-dual-750x150.png "CIDME project banner logo - dual")
 ![CIDME GitHub repo QR code - cidme://public/EntityContext/f35b23ca-27a9-4724-b047-e8a5c7267db1](logos/cidme-github_repo-qr_code-350x350.png "CIDME GitHub repo QR code - cidme://public/EntityContext/f35b23ca-27a9-4724-b047-e8a5c7267db1")
 
+CIDME GitHub repository CIDME ID/URL: _cidme://public/EntityContext/f35b23ca-27a9-4724-b047-e8a5c7267db1_
 
 # CIDME (_Pronounced SID-MEE_)
 Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine for management of contextualized identity information.
