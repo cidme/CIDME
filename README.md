@@ -90,17 +90,6 @@ CIDME provides functionality to:
 
 * CIDME is intended to be integrated, embedded, and/or used by other software projects / applications.  
   * CIDME is NOT a stand-alone piece of software!
-* CIDME PHP code will be:
-  * Compliant with the following [PHP Standards Recommendations](http://www.php-fig.org/psr/):
-    * [PSR-1 - Basic Coding Standard](http://www.php-fig.org/psr/psr-1/)
-    * [PSR-2 - Coding Style Guide](http://www.php-fig.org/psr/psr-2/)
-    * [PSR-4 - Autoloader](http://www.php-fig.org/psr/psr-4/)
-  * Other draft PHP PSRs CIDME may or may not follow:
-    * [PSR-5 - PHPDoc Standard](https://github.com/phpDocumentor/fig-standards/tree/master/proposed)
-    * [PSR-12 - Extended Coding Style Guide](https://github.com/php-fig/fig-standards/blob/master/proposed/extended-coding-style-guide.md)
-  * Autoloadable via [Composer](https://getcomposer.org/)
-  * Documented using the [PHPDoc](https://en.wikipedia.org/wiki/PHPDoc) commenting style.
-  * Unit tested using the [PHPUnit](https://phpunit.de/) unit testing package.
 
 [*Back to TOC*](#toc)
 
@@ -186,6 +175,7 @@ The current focus is implementing the core functionality into an easily embedded
 ## Other projects making use of CIDME
 
 * [IMSFAY](http://www.github.com/IMSFAY/IMSFAY) - *Information Management System for Families, Adults, and Youth*
+  * Uses a prototype version created with PHP and the Neo4j graphing database.
 
 [*Back to TOC*](#toc)
 
