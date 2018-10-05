@@ -1,4 +1,5 @@
 ![CIDME project banner logo - dual](logos/cidme-banner_logo-dual-750x150.png "CIDME project banner logo - dual")
+![CIDME project QR code](logos/cidme-qr_code-350x350.png "CIDME project QR code")
 
 
 # CIDME (_Pronounced SID-MEE_)
