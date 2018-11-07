@@ -12,6 +12,7 @@
     "entityContextLinks": {"@id": "cidme:entityContextLinks/entityContextLinks.jsonld"},
     "EntityContextLinkGroup": {"@id": "cidme:EntityContextLinkGroup/EntityContextLinkGroup.jsonld"},
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
-    "MetadataGroup": {"@id": "cidme:MetadataGroup/MetadataGroup.jsonld"}
+    "MetadataGroup": {"@id": "cidme:MetadataGroup/MetadataGroup.jsonld"},
+    "data": {"@id": "cidme:data/data.jsonld"}
   }
 }
