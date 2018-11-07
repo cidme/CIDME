@@ -113,6 +113,23 @@
       },
       "rdfs:comment": "CIDME Metadata Group.  Metadata associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, etc...).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
       "rdfs:label": "MetadataGroup"
+    },
+    {
+      "@id": "http://cidme.net/vocab/0.2.0/data",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/0.2.0/EntityContextDataGroup"
+        },
+        {
+          "@id": "http://cidme.net/vocab/0.2.0/EntityContextLinkGroup"
+        },
+        {
+          "@id": "http://cidme.net/vocab/0.2.0/MetadataGroup"
+        }
+      ],
+      "rdfs:comment": "CIDME Resource Data.",
+      "rdfs:label": "data"
     }
   ]
 }
