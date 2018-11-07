@@ -4,7 +4,7 @@
 CIDME GitHub repository CIDME ID/URL: _cidme://public/EntityContext/f35b23ca-27a9-4724-b047-e8a5c7267db1_
 
 # CIDME (_Pronounced SID-MEE_)
-Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine for management of contextualized identity information.
+Contextual IDentity Management Engine - Much more than just contact/identity management - Integrated/embedded engine for management of contextualized identity information.  Your knowledge, _connected_.
 
 📌⛔⚠ **_IMPORTANT NOTE:_ This project is in it's very early stages.  Therefore anything in this document may change at any time, and any information in this document may also be incorrect or outdated at any point!!!**
 
