@@ -31,11 +31,9 @@
     {
       "@id": "http://cidme.net/vocab/0.2.0/EntityContext",
       "@type": "rdfs:Class",
-      "schema:domainIncludes": [
-        {
-          "@id": "http://cidme.net/vocab/0.2.0/entityContexts"
-        }
-      ],
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/0.2.0/entityContexts"
+      },
       "rdfs:comment": "CIDME Entity Context.  A context represents one aspect of an Entity.",
       "rdfs:label": "EntityContext"
     },
