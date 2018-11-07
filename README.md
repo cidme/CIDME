@@ -10,116 +10,81 @@ _**C**ontextual **ID**entity **M**anagement **E**ngine (**CIDME**)_: Giving an i
 
 <a name="toc"/></a>
 ## Table of Contents
-* [What is CIDME???](#whatisit)
-* [What are contexts?](#contexts)
-* [What does CIDME _not_ do?](#notdo)
-* [So what _does_ CIDME do?](#whatitdo)
-* [Project Goals / Guidelines](#goals)
-* [Why use CIDME?](#whyuse)
-* [Why not just use IdM/IaM?](#whynotidm)
+
+* [Summary](#summary)
+* [Intended audience](#audience)
+* [Introduction](#intro)
 * [Why the name *CIDME*?](#whythename)
 * [Current project status](#status)
 * [Documentation](#docs)
-* [Basic CIDME Architecture](#architecture)
-  * [Entity Relationship Diagram (*ERD*)](#erd)
+* [Entity Relationship Diagram (*ERD*)](#erd)
 * [Other projects making use of *CIDME*](#otherprojects)
 * [Who is "*we*"?](#whoiswe)
 * [Who is *Joe Thielen*?](#joethielen)
 
-<a name="whatisit"/></a>
-## What is CIDME???
-CIDME is software to help manage contextualized contact/identity information and is meant to be integrated/embedded/used by other software projects/applications.  At it's most basic level, it could be considered a contact manager... _on steroids_!  But it's much more than that.  There is a lot of software out there that can manage contact/identity information.  CIDME is different in that it brings another concept into play... putting this information into _contexts_.
 
-While heavy emphasis is placed on _contexts_ in CIDME, it's entirely possible to use it as a simple contact manager as well.  
-
-Before we discuss what exactly CIDME does, let's first go over what _contexts_ are, and what CIDME does _not_ do...
+<a name="summary"/></a>
+## Summary
+CIDME is an umbrella software project which encompasses a set of specifications as well as implementations of those specifications.  The specifications deal with giving an identity to, and storing contextualized information about people, organizations, places, and things.  In CIDME these are referred to as entities.
 
 [*Back to TOC*](#toc)
 
 
-<a name="contexts"/></a>
-## What are contexts?
-In the health care world a context could be an _episode of care_ or even an individual _encounter_ for a given patient.  In _case management_, the individual _cases_ themselves could be contexts.  Complex cases may actually need to be dealt with in parts, each of which could also be considered a context.  
-
-To put it another way, let's consider the fictional character of [Dr. Jekyll / Mr. Hyde](https://en.wikipedia.org/wiki/Dr._Jekyll_and_Mr._Hyde_(character)).  Technically, this is one person.  One _entity_.  But you could consider him to have two separate _identities_... one as _Dr. Jekyll_ and the other as _Mr. Hyde_.  Therefore, it can be said that this single entity can be referred to in two different contexts.  If you're referring to Dr. Jekyll that's one contextual identity.  Likewise if you're referring to Mr. Hyde, that's a second contextual identity.  You may wish to collect and/or associate different sets of information with these different identities.  In a typical identity management scenario it's not possible to separate this information.   It all goes in under one person, making for a confusing experience when trying to reference certain pieces of information related to just one of the identities.  In CIDME, one entity can be created to reference the person/entity known by both names, but yet have two contexts by which to refer separately to Dr. Jekyll and Mr. Hyde.
-
-Let's get back to real life here.  Whether your needs are based on separating information by _episodes of care_, _encounters_, _cases_, or _whatever_, CIDME can provide a better way to help deal with, and separate, this information.
-
-CIDME contexts can also be _nested_, meaning a given context can be a _subcontext_ of another.  Again, using the health care world as an example, the top level context could be for _episode of care_ and individual _encounters_ could be linked to that as subcontexts.
-
-CIDME also provides the ability to associate date ranges with contexts.  Why is this useful?  **DATA RETENTION** and **DATA PURGING**.  Most software applications deal with getting information _into_ the system.  Very few provide methods of getting rid of it, especially on a timely basis and in an easy manner.  Let's say you're required to keep information for a given person for _X_ number of years.  CIDME specifically provides for date ranges to make this possible!
+<a name="audience"/></a>
+## Intended audience
+CIDME is not meant for use by non-developer end-users.  CIDME is not an app, nor a program.  CIDME is for use by other software developers / projects and is meant to be built upon.  Many software projects, from the smallest batch scripts to the largest enterprise implementations, need a way to store information about various entities (people, organizations, places, and things).  CIDME is an attempt to standardize how this is done, creating a re-usable means to do so, allowing other software developers / projects to save time in not having to re-create this functionality while also allowing for a means for sharing this information in a standardized manner.
 
 [*Back to TOC*](#toc)
 
 
-<a name="notdo"/></a>
-## What does CIDME _not_ do?
-CIDME does not provide for access control / authorization (_but it certainly could be incorporated into one, especially a custom one_).  There are already many software projects/solutions that deal with this.  Therefore, CIDME doesn't necessarily fall into these following categories:
-* **Identity Management (__IdM__)**
-* **Identity and Access Management (_IaM_)**
-* **Access and identity management" (_AIM_)**
+<a name="intro"/></a>
+## Introduction
+CIDME is an umbrella software project which encompasses a set of specifications as well as implementations of those specifications.  The specifications deal with giving an identity to, and storing information about entities - people, organizations, places, and things.
 
-CIDME is not, nor does it use, _LDAP_.  However CIDME does provide a lot of similar functionality as LDAP / _directory services_.
+In many cases, existing software projects attempt to lump all information about an entity into one place, when instead that information may be better separated into distinct parts, while still maintaining links to each other, forming parts of a whole.  Contact information, for example.  Let's give an example where a person has multiple jobs.  They may have many phone numbers and email addresses, especially over time.  A personal-use set of contact information, one set for one job, and still another set for the other job!  The address books and contact managers we currently use tend to not easily allow us to manage information this way.  You have no idea if a number is attached to a given job... only that it's labeled as 'work'.   Additionally, as people drop old numbers and addresses and adopt new ones, history becomes muddled.  When looking through old emails you may come across a cryptic address (ed209@example.com) and wonder, who was that?  The context has been lost.  You've since deleted that email address from your contact manager because the person doesn't use it any more.  You don't want to keep it listed for fear of accidentally sending a new email to that old address.  But wouldn't it be nice to still have a way to keep it somewhere for posterity?
 
-CIDME is not a stand-alone piece of software!  It can not be used by itself.
+CIDME allows you to keep this information, group it, and give it context.  Here, we can create at least three contexts... one for personal-use information, and one for each of the two jobs.  You can then associate their personal/private contact information with the personal one, then the relevant items with the appropriate job-related contexts.  When this person switches jobs you can still keep this information, but give it a date-range, so you know it was only valid at that time.  You can also give it an inactive status, so it does not show up as an available address when creating new emails, sending texts, or making a phone call.  The end result is you can go back and look up ed209@example.com and note it related to our example person, and the fact that they used it while working at a certain job during a given time (date range), but know to not use this information for new contacts with this person.  CIDME gives context to this identity information.
 
-[*Back to TOC*](#toc)
+CIDME is all about managing this information.  Not simply just at one given point in time, but also managing information as it ages and/or about an entity's state at different points in time.  For example, both people and organizations change their names or contact information.  Instead of just deleting or changing the existing information in your system about these entities, CIDME allows you to keep it, referencing it by dates in time or status (active/inactive).  CIDME also allows for structured archiving and/or purging of old information.  CIDME can be referred to as an engine to manage this information.
 
+Hence the CIDME project acronym:  Contextualized IDentity Management Engine.
 
-<a name="whatitdo"/></a>
-## So what _does_ CIDME do?
+At the heart of CIDME are the entities and entity contexts.  These are realized via JSON-LD serialized strings (RDF can also be used) and are referred to as resources.  These resources themselves are natively operating system and programming language agnostic.  This means any programming language which has support for JSON and/or JSON-LD has the functionality necessary to deal with CIDME resources. 
 
-CIDME provides functionality to:
-* Store and retrieve entity and identity information.
-  * This includes such personal information such as:
-    * Personally Identifiable Information (PII)
-      * Name
-      * Demographics
-    * Contact information:
-      * Postal addresses
-      * Phone Numbers
-      * Email addresses
-    * etc...
-  * This can also include keeping a history of the above information, to keep track of changes.
-* Associate the above information with specific contexts for a given entity.
-* **MORE TO COME...**
+A minimial example of a CIDME entity resource for illustrative purposes:
+```json
+{
+    "@context": "http://cidme.net/vocab/0.2.0/jsonldcontext.json",
+    "@type": "Entity",
+    "@id": "cidme://local/Entity/db9b4bdb-50b7-483d-95a6-b3884ecd4137"
+}
+```
 
-[*Back to TOC*](#toc)
+As CIDME resources are just strings, they may be stored in many different ways.  The CIDME project was envisioned to be able to be used by a very, very wide audience of developers on an equally wide variety of platforms.  CIDME resources may be used on embedded platforms with very limited computational power and memory.   Likewise they may be used on extremely scaled up scenarios involving databases of millions upon millions of resources.
 
+Additionally, CIDME may be used in very simple ways, such as by a single developer working on a small home-brew project involving batch/shell scripts.  However, it can also be scaled up for use in complex scenarios involving AI with semantic understanding of the linked data!
 
-<a name="goals"/></a>
-## Project Goals / Guidelines
+CIDME usage examples... CIDME does not necessarily DO all of the these items, but it does provide a standardized way of managing data that can enable these types of systems.
 
-* CIDME is intended to be integrated, embedded, and/or used by other software projects / applications.  
-  * CIDME is NOT a stand-alone piece of software!
+Simple:
+* Storage of a user list for one application.
+* Contact/personal information (PIM) management / storage.
+* A method to provide a (structured/standardized) identity to nearly any type of object, tangible or not.
+* A way to add standardized/structured metadata to files in a file system.
+  * Pictures and video as well.
+  * Can also link subjects within the pictures and video to contacts.
 
-[*Back to TOC*](#toc)
+Intermediate:
+* Centralized storage of user / contact / entity management for multiple simultaneous applications.
+  * Similar to a implementations of LDAP / Active Directory, while providing context functionality.
+* A personal or professional Farley File
+  * https://en.m.wikipedia.org/wiki/Farley_file
+* Linking real world objects to metadata via QR codes.
+  * Have CIDME entity or entity context ID placed in the QR code as a URL.
+  * This QR code may provide a public CIDME ID.  The entity scanning the QR code can create a new local entity and link the local one to the public one.  Now the entity has its own copy for posterity and can add any data wished and/or link to other entities.
 
-
-<a name="whyuse"/></a>
-## Why use CIDME?
-
-Good question!
-
-* Keeping Personally Identifying Information (PII) separate from other parts of a system is good practice.
-  * CIDME is intended to be hidden from public access and not directly available except through application logic.
-  * CIDME provides random, unique, identifiers for identities / contexts.  These can be used and stored by the application instead of the actual PII.  
-    * When the actual PII needs to be referenced, the application uses CIDME to retrieve it.
-* Keeping PII as well as Protected Health Information (PHI) separate is important, where applicable.
-* Contexts!!!
-* Quick start your new application by not re-inventing the wheel.
-
-[*Back to TOC*](#toc)
-
-
-<a name="whynotidm"/></a>
-## Why not just use IdM/IaM?
-
-Another good question!
-
-CIDME is not an IdM/IaM replacement.  You probably want to use IdM/IaM in addition to CIDME.  IdM/IaM help control access to your _application users_.  While information about them can also go into CIDME, it's the information about _other people_ for which CIDME is intended.  For example, in the health care world, the hospital or clinic has an information system (_EHR_) which isn't typically intended to be accessed by the patient.  But it _is_ designed to store information _about_ the patient.  The nurses and doctors are typically the _users_ in this situation, and those would be covered by IdM/IaM.  But the patient, in this situation, is better covered by separate functionality.  
-
-This is where CIDME comes into play.
+Complex:
+* Usage in an AI-based system involving semantic and linked big data.
 
 
 [*Back to TOC*](#toc)
@@ -138,9 +103,9 @@ The only other major usage of the term which turns up during web searches is a D
 <a name="status"/></a>
 ## Current project status
 
-* The project was first created in October 2016.
-* As of Jan 2018 the project focus is creating the core engine.
-* There is currently no useful software produced by this project, _yet_.
+* The project was first created in October 2016 and has undergone several major foundational changes.
+* As of Nov 2018 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
+* While there is currently no useful software produced by this project _yet_, work is continuing on [vocabulary definition files](http://cidme.net/vocab).  See the *gh-pages* branch of the CIDME GitHub repository to find the vocab directory.
 
 [*Back to TOC*](#toc)
 
@@ -148,22 +113,16 @@ The only other major usage of the term which turns up during web searches is a D
 <a name="docs"/></a>
 ## Documentation
 
-Aside from this document, please refer to the [project wiki](../../wiki/)!
+Aside from this document, please refer to the [vocabulary definition files](http://cidme.net/vocab).  See the *gh-pages* branch of the CIDME GitHub repository to find the vocab directory.
 
+There is a [project wiki](../../wiki/), but it currently has limited information.
 
-[*Back to TOC*](#toc)
-
-
-<a name="architecture"/></a>
-## Basic CIDME Architecture
-
-The current focus is implementing the core functionality into an easily embedded package.
 
 [*Back to TOC*](#toc)
 
 
 <a name="erd"/></a>
-### Entity Relationship Diagram (*ERD*)
+## Entity Relationship Diagram (*ERD*)
 
 **NOTE - This is a DRAFT and may change at any time!**
 
@@ -177,7 +136,7 @@ The current focus is implementing the core functionality into an easily embedded
 ## Other projects making use of CIDME
 
 * [IMSFAY](http://www.github.com/IMSFAY/IMSFAY) - *Information Management System for Families, Adults, and Youth*
-  * Uses a prototype version created with PHP and the Neo4j graphing database.
+  * Uses a previous prototype version of CIDME created with PHP and the Neo4j graphing database.
 
 [*Back to TOC*](#toc)
 
