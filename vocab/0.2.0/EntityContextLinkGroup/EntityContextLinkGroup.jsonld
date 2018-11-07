@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/0.2.0/jsonldcontext.json"
+  },
+  "@graph": [    
+    {
+      "@id": "cidme:EntityContextLinkGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:entityContextLinks"
+      },
+      "rdfs:comment": "CIDME Entity Context Link Group.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME datastore a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME datastore.",
+      "rdfs:label": "EntityContextLinkGroup"
+    }
+  ]
+}
