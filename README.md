@@ -4,7 +4,7 @@
 CIDME GitHub repository CIDME ID/URL: _cidme://public/EntityContext/f35b23ca-27a9-4724-b047-e8a5c7267db1_
 
 # CIDME (_Pronounced SID-MEE_)
-Giving an identity to, and storing information about people, organizations, places, and things.   Your knowledge, _connected_.
+_**C**ontextual **ID**entity **M**anagement **E**ngine (**CIDME**)_: Giving an identity to, and storing contextualized information about people, organizations, places, and things.   Your knowledge, _connected_.
 
 📌⛔⚠ **_IMPORTANT NOTE:_ This project is in it's very early stages.  Therefore anything in this document may change at any time, and any information in this document may also be incorrect or outdated at any point!!!**
 
