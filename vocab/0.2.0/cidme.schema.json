@@ -1,0 +1,234 @@
+{
+    "id": "http://cidme.net/vocab/0.2.0/cidme.jsonschema.json",
+    "title": "CIDME Entity",
+    "type": "object",
+    "definitions": {
+        "@context": {
+            "type": "string",
+            "format": "uri"
+        },
+        "Entity": {
+            "title": "CIDME Entity Resource",
+            "type": "object",
+            "properties": {
+                "@context": {
+                    "$ref": "#/definitions/@context"
+                },
+                "@id": {
+                    "type": "string",
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/Entity\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },
+                "@type": {
+                    "type": "string",
+                    "enum": ["Entity"]
+                },
+                "entityContexts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EntityContext"
+                    }
+                },
+                "metadata": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MetadataGroup"
+                    }
+                }
+            },
+            "required": ["@context", "@id", "@type"],
+            "additionalProperties": false
+        },
+        "EntityContext": {
+            "title": "CIDME EntityContext Resource",
+            "type": "object",
+            "properties": {
+                "@context": {
+                    "$ref": "#/definitions/@context"
+                },
+                "@id": {
+                    "type": "string",
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/EntityContext\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },
+                "@reverse": {
+                    "type": "string",
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/(Entity|EntityContext)\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },
+                "@type": {
+                    "type": "string",
+                    "enum": ["EntityContext"]
+                },
+                "entityContexts": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EntityContext"
+                    }
+                },
+                "entityContextLinks": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EntityContextLinkGroup"
+                    }
+                },
+                "entityContextData": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/EntityContextDataGroup"
+                    }
+                },
+                "metadata": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MetadataGroup"
+                    }
+                }
+            },
+            "required": ["@context", "@id", "@type"],
+            "additionalProperties": false
+        },
+        "EntityContextLinkGroup": {
+            "title": "CIDME EntityContextLinkGroup Resource",
+            "type": "object",
+            "properties": {
+                "@context": {
+                    "$ref": "#/definitions/@context"
+                },
+                "@id": {
+                    "type": "string",
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/EntityContextLinkGroup\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },
+                "@reverse": {                                                           
+                    "type": "string",                                                   
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/EntityContext\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },                                                                      
+                "@type": {
+                    "type": "string",
+                    "enum": ["EntityContextLinkGroup"]
+                },
+                "metadata": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MetadataGroup"
+                    }
+                },
+                "data": {
+                    "type": "array"
+                }
+            },
+            "required": ["@context", "@id", "@type"],
+            "additionalProperties": false
+        },
+        "EntityContextDataGroup": {
+            "title": "CIDME EntityContextDataGroup Resource",
+            "type": "object",
+            "properties": {
+                "@context": {
+                    "$ref": "#/definitions/@context"
+                },
+                "@id": {
+                    "type": "string",
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/EntityContextDataGroup\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },
+                "@reverse": {                                                           
+                    "type": "string",                                                   
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/EntityContext\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },                                                                      
+                "@type": {
+                    "type": "string",
+                    "enum": ["EntityContextDataGroup"]
+                },
+                "metadata": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MetadataGroup"
+                    }
+                },
+                "data": {
+                    "type": "array"
+                }
+            },
+            "required": ["@context", "@id", "@type"],
+            "additionalProperties": false
+        },
+        "MetadataGroup": {
+            "title": "CIDME MetadataGroup Resource",
+            "type": "object",
+            "properties": {
+                "@context": {
+                    "$ref": "#/definitions/@context"
+                },
+                "@id": {
+                    "type": "string",
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/MetadataGroup\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },
+                "@reverse": {                                                           
+                    "type": "string",                                                   
+                    "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/[a-zA-Z0-9\\-]+\\/(Entity|EntityContext|EntityContextLinkGroup|EntityContextDataGroup|MetadataGroup)\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+                },
+                "@type": {
+                    "type": "string",
+                    "enum": ["MetadataGroup"]
+                },
+                "metadata": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/MetadataGroup"
+                    }
+                },
+                "data": {
+                    "type": "array"
+                }
+            },
+            "required": ["@context", "@id", "@type"],
+            "additionalProperties": false
+        }
+    },
+    "if": {
+        "properties": {
+            "@type": {"enum": ["Entity"]}
+        }
+    },
+    "then": {
+        "$ref": "#/definitions/Entity"
+    },
+    "else": {
+        "if": {
+            "properties": {
+                "@type": {"enum": ["EntityContext"]}
+            }
+        },
+        "then": {
+            "$ref": "#/definitions/EntityContext"
+        },
+        "else": {
+            "if": {
+                "properties": {
+                    "@type": {"enum": ["EntityContextLinkGroup"]}
+                }
+            },
+            "then": {
+                "$ref": "#/definitions/EntityContextLinkGroup"
+            },
+            "else": {
+                "if": {
+                    "properties": {
+                        "@type": {"enum": ["EntityContextDataGroup"]}
+                    }
+                },
+                "then": {
+                    "$ref": "#/definitions/EntityContextDataGroup"
+                },
+                "else": {
+                    "if": {
+                        "properties": {
+                            "@type": {"enum": ["MetadataGroup"]}
+                        }
+                    },
+                    "then": {
+                        "$ref": "#/definitions/MetadataGroup"
+                    },
+                    "else": false
+                }
+            }
+        }
+    }
+}
