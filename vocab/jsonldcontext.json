@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "type": "@type",
+    "id": "@id",
+    "@vocab": "http://cidme.net/vocab/0.2.0/",
+    "cidme": "http://cidme.net/vocab/0.2.0/",
+    "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
+    "entityContexts": {"@id": "cidme:entityContexts/entityContexts.jsonld"},
+    "EntityContext": {"@id": "cidme:EntityContext/EntityContext.jsonld"},
+    "entityContextData": {"@id": "cidme:entityContextData/entityContextData.jsonld"},
+    "EntityContextDataGroup": {"@id": "cidme:EntityContextDataGroup/EntityContextDataGroup.jsonld"},
+    "entityContextLinks": {"@id": "cidme:entityContextLinks/entityContextLinks.jsonld"},
+    "EntityContextLinkGroup": {"@id": "cidme:EntityContextLinkGroup/EntityContextLinkGroup.jsonld"},
+    "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
+    "MetadataGroup": {"@id": "cidme:MetadataGroup/MetadataGroup.jsonld"}
+  }
+}
