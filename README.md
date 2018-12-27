@@ -104,8 +104,12 @@ The only other major usage of the term which turns up during web searches is a D
 ## Current project status
 
 * The project was first created in October 2016 and has undergone several major foundational changes.
-* As of Nov 2018 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
-* While there is currently no useful software produced by this project _yet_, work is continuing on [vocabulary definition files](http://cidme.net/vocab).  See the *gh-pages* branch of the CIDME GitHub repository to find the vocab directory.
+* As of Dec 2018 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
+* Actual code (_all currently in **alpha** stages!_):
+  * [vocabulary definition files](http://cidme.net/vocab).  
+    * See the *gh-pages* branch of the CIDME GitHub repository to find the vocab directory.
+  * [JavaScript/TypeScript CIDME Core implementation](http://github.com/cidme/CIDME-JS).
+  * [JavaScript/Node-based Command-Line Interface (CLI) for CIDME Core](http://github.com/cidme/CIDME-CLI).
 
 [*Back to TOC*](#toc)
 
