@@ -1,0 +1,180 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/"
+ },
+ "@graph": [
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/Entity",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Top-level CIDME object.",
+      "rdfs:label": "Entity"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/entityContexts",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/Entity"
+        },
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContext"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/EntityContext"
+      },
+      "rdfs:comment": "CIDME Entity Context array (set).",
+      "rdfs:label": "entityContexts"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/EntityContext",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/entityContexts"
+      },
+      "rdfs:comment": "CIDME Entity Context.  A context represents one aspect of an Entity.",
+      "rdfs:label": "EntityContext"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/entityContextData",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/EntityContext"
+      },
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextDataGroup"
+      },
+      "rdfs:comment": "CIDME Entity Context Data.",
+      "rdfs:label": "entityContextData"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextDataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/entityContextData"
+      },
+      "rdfs:comment": "CIDME Entity Context Data Group.  All data associated with an Entity Context other than that which would fit in another CIDME resource type.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "EntityContextDataGroup"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/entityContextLinks",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/EntityContext"
+      },
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextLinkGroup"
+      },
+      "rdfs:comment": "CIDME Entity Context Links.",
+      "rdfs:label": "entityContextLinks"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextLinkGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/entityContextLinks"
+      },
+      "rdfs:comment": "CIDME Entity Context Link Group.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME datastore a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME datastore.",
+      "rdfs:label": "EntityContextLinkGroup"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/CreatedMetadata",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "rdfs:comment": "Identifies MetadataGroup resource as having information relating to the creation of the MetadataGroup parent resource.",
+      "rdfs:label": "CreatedMetadata"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/ModifiedMetadata",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "rdfs:comment": "Identifies MetadataGroup resource as having information relating to a given modification of the MetadataGroup parent resource.",
+      "rdfs:label": "ModifiedMetadata"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/LastModifiedMetadata",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "rdfs:comment": "Identifies MetadataGroup resource as having information relating to the most recent modification of the MetadataGroup parent resource.",
+      "rdfs:label": "LastModifiedMetadata"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/LabelMetadata",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "rdfs:comment": "Identifies MetadataGroup resource as having label-related information for the MetadataGroup parent resource.",
+      "rdfs:label": "LabelMetadata"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/NoteMetadata",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "rdfs:comment": "Identifies MetadataGroup resource as having note/comment-related information for the MetadataGroup parent resource.",
+      "rdfs:label": "NoteMetadata"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/metadata",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/Entity"
+        },
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContext"
+        },
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextDataGroup"
+        },
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextLinkGroup"
+        },
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/MetadataGroup"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/MetadataGroup"
+      },
+      "rdfs:comment": "CIDME Resource Metadata.",
+      "rdfs:label": "metadata"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/MetadataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/metadata"
+      },
+      "rdfs:comment": "CIDME Metadata Group.  Metadata associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, etc...).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "MetadataGroup"
+    },
+    {
+      "@id": "http://cidme.net/vocab/core/0.3.0/data",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextDataGroup"
+        },
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextLinkGroup"
+        },
+        {
+          "@id": "http://cidme.net/vocab/core/0.3.0/MetadataGroup"
+        }
+      ],
+      "rdfs:comment": "CIDME Resource Data.",
+      "rdfs:label": "data"
+    }
+  ]
+}
