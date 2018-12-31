@@ -1,0 +1,19 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/core/0.3.0/jsonldcontext.json"
+  },
+  "@graph": [    
+    {
+      "@id": "cidme:MetadataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/metadata"
+      },
+      "rdfs:comment": "CIDME Metadata Group.  Metadata associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, etc...).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "Metadata"
+    }
+  ]
+}
