@@ -107,7 +107,7 @@ The only other major usage of the term which turns up during web searches is a D
 * As of Dec 2018 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
 * Actual code (_all currently in **alpha** stages!_):
   * [vocabulary definition files](http://cidme.net/vocab).  
-    * See the *gh-pages* branch of the CIDME GitHub repository to find the vocab directory.
+    * See the [*gh-pages* branch of the CIDME GitHub repository](https://github.com/cidme/CIDME/tree/gh-pages) to find the vocab directory.
   * [JavaScript/TypeScript CIDME Core implementation](http://github.com/cidme/CIDME-JS).
   * [JavaScript/Node-based Command-Line Interface (CLI) for CIDME Core](http://github.com/cidme/CIDME-CLI).
 
@@ -117,9 +117,16 @@ The only other major usage of the term which turns up during web searches is a D
 <a name="docs"/></a>
 ## Documentation
 
-Aside from this document, please refer to the [vocabulary definition files](http://cidme.net/vocab).  See the *gh-pages* branch of the CIDME GitHub repository to find the vocab directory.
+This document serves as an overview of the various parts of the CIDME project.  There are a few different GitHub repositories for more  information on specific portions:
 
-There is a [project wiki](../../wiki/), but it currently has limited information.
+* [CIDME/CIDME-Core-Spec](http://github.com/CIDME/CIDME-Core-Spec) - The CIDME Core specification.
+* [CIDME/CIDME-Ext-Spec](http://github.com/CIDME/CIDME-Ext-Spec) - The CIDME Recommended Extensions specification.
+* [CIDME/CIDME-JS](http://github.com/CIDME/CIDME-JS) - The JavaScript (TypeScript) CIDME implementation.
+* [CIDME/CIDME-CLI](http://github.com/CIDME/CIDME-CLI) - The Node-based CIDME CLI.
+
+Aside from these repositories, please refer to the [vocabulary definition files](http://cidme.net/vocab).  See the [*gh-pages* branch of the CIDME GitHub repository](https://github.com/cidme/CIDME/tree/gh-pages) to find the vocab directory.
+
+There is also a [project wiki](../../wiki/), but it currently has limited information.
 
 
 [*Back to TOC*](#toc)
