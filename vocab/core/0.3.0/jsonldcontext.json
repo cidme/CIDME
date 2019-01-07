@@ -4,6 +4,8 @@
     "id": "@id",
     "@vocab": "http://cidme.net/vocab/core/0.3.0/",
     "cidme": "http://cidme.net/vocab/core/0.3.0/",
+    "cidmeUri": {"@id": "cidme:cidmeUri/cidmeUri.jsonld"},
+    "data": {"@id": "cidme:data/data.jsonld"},
     "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
     "entityContexts": {"@id": "cidme:entityContexts/entityContexts.jsonld"},
     "EntityContext": {"@id": "cidme:EntityContext/EntityContext.jsonld"},
@@ -11,13 +13,14 @@
     "EntityContextDataGroup": {"@id": "cidme:EntityContextDataGroup/EntityContextDataGroup.jsonld"},
     "entityContextLinks": {"@id": "cidme:entityContextLinks/entityContextLinks.jsonld"},
     "EntityContextLinkGroup": {"@id": "cidme:EntityContextLinkGroup/EntityContextLinkGroup.jsonld"},
+    "externalId": {"@id": "cidme:externalId/externalId.jsonld"},
+    "externalIdType": {"@id": "cidme:externalIdType/externalIdType.jsonld"},
     "CreatedMetadata": {"@id": "cidme:CreatedMetadata/CreatedMetadata.jsonld"},
     "ModifiedMetadata": {"@id": "cidme:ModifiedMetadata/ModifiedMetadata.jsonld"},
     "LastModifiedMetadata": {"@id": "cidme:LastModifiedMetadata/LastModifiedMetadata.jsonld"},
     "LabelMetadata": {"@id": "cidme:LabelMetadata/LabelMetadata.jsonld"},
     "NoteMetadata": {"@id": "cidme:NoteMetadata/NoteMetadata.jsonld"},    
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
-    "MetadataGroup": {"@id": "cidme:MetadataGroup/MetadataGroup.jsonld"},
-    "data": {"@id": "cidme:data/data.jsonld"}
+    "MetadataGroup": {"@id": "cidme:MetadataGroup/MetadataGroup.jsonld"}
   }
 }
