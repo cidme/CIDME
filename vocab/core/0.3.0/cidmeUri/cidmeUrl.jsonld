@@ -14,7 +14,7 @@
   ],
   "schema:rangeIncludes": [
     {
-      "@id": "http://schema.org/Text"
+      "@id": "schema:Text"
     }
   ],  
   "rdfs:comment": "A link to another CIDME resource.  May be in another CIDME data store.",
