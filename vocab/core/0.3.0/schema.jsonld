@@ -8,16 +8,12 @@
     {
       "@id": "http://cidme.net/vocab/core/0.3.0/cidmeUri",
       "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextLinkGroup"
-        }
-      ],
-      "http://schema.org/rangeIncludes": [
-        {
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "http://schema.org/rangeIncludes": {
           "@id": "http://schema.org/Text"
-        }
-      ],
+      },
       "rdfs:comment": "A link to another CIDME resource.  May be in another CIDME data store.",
       "rdfs:label": "cidmeUri"
     },
@@ -124,33 +120,25 @@
     {
       "@id": "http://cidme.net/vocab/core/0.3.0/externalId",
       "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextLinkGroup"
-        }
-      ],
-      "http://schema.org/rangeIncludes": [
-        {
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "http://schema.org/rangeIncludes": {
           "@id": "http://schema.org/Text"
-        }
-      ],
+      },
       "rdfs:comment": "Used to indicate a generic external ID, when no other RDF type is applicable.",
       "rdfs:label": "externalId"
     },
     {
       "@id": "http://cidme.net/vocab/core/0.3.0/externalIdType",
       "@type": "rdf:Property",
-      "schema:domainIncludes": [
-        {
-          "@id": "http://cidme.net/vocab/core/0.3.0/EntityContextLinkGroup"
-        }
-      ],
-      "http://schema.org/rangeIncludes": [
-        {
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "http://schema.org/rangeIncludes": {
           "@id": "http://schema.org/Text"
-        }
-      ],
-      "rdfs:comment": "Used to indicate a generic external ID, when no other RDF type is applicable.",
+      },
+      "rdfs:comment": "If cidme:externalId is specified, this may be used to denote what type of ID was specified (SSN, Drivers license, DB record, etc...).",
       "rdfs:label": "externalIdType"
     },  
     {
