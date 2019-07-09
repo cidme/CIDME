@@ -17,6 +17,6 @@
       "@id": "schema:Text"
     }
   ],  
-  "rdfs:comment": "A link to another CIDME resource.  May be in another CIDME data store.",
+  "rdfs:comment": "A link to another CIDME resource.  May be in another CIDME library.",
   "rdfs:label": "cidmeUri"
 }
