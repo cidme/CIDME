@@ -14,7 +14,7 @@
       "http://schema.org/rangeIncludes": {
           "@id": "http://schema.org/Text"
       },
-      "rdfs:comment": "A link to another CIDME resource.  May be in another CIDME data store.",
+      "rdfs:comment": "A link to another CIDME resource.  May be in another CIDME library.",
       "rdfs:label": "cidmeUri"
     },
     {
@@ -114,7 +114,7 @@
       "schema:domainIncludes": {
         "@id": "http://cidme.net/vocab/core/0.3.0/entityContextLinks"
       },
-      "rdfs:comment": "CIDME Entity Context Link Group.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME datastore a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME datastore.",
+      "rdfs:comment": "CIDME Entity Context Link Group.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME library a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME library.",
       "rdfs:label": "EntityContextLinkGroup"
     },
     {
