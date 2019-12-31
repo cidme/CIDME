@@ -104,7 +104,7 @@ The only other major usage of the term which turns up during web searches is a D
 ## Current project status
 
 * The project was first created in October 2016 and has undergone several major foundational changes.
-* As of Dec 2018 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
+* As of Jan 2020 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
 * Actual code (_all currently in **alpha** stages!_):
   * [vocabulary definition files](http://cidme.net/vocab).  
     * See the [*gh-pages* branch of the CIDME GitHub repository](https://github.com/cidme/CIDME/tree/gh-pages) to find the vocab directory.
@@ -146,8 +146,8 @@ There is also a [project wiki](../../wiki/), but it currently has limited inform
 <a name="otherprojects"/></a>
 ## Other projects making use of CIDME
 
-* [IMSFAY](http://www.github.com/IMSFAY/IMSFAY) - *Information Management System for Families, Adults, and Youth*
-  * Uses a previous prototype version of CIDME created with PHP and the Neo4j graphing database.
+* [IMSFAY](http://www.github.com/IMSFAY/IMSFAY) - *Information Management System for Families, Adults, and Youth* 
+  * Now a defunct project, used a previous prototype version of CIDME created with PHP and the Neo4j graphing database.
 
 [*Back to TOC*](#toc)
 
@@ -165,7 +165,7 @@ Please, *feel free* to drop me a line!  I've created this project on GitHub spec
 <a name="joethielen"/></a>
 ## Who is *Joe Thielen*?
 
-I've been creating fairly complex, but monolithic, LAMP apps for both non- and for-profit companies for over 20 years.  My experience lies with small- and medium- sized organizations / businesses in the USA.  Most of these apps have, in one form or another, made heavy use of, or even dealt primarily with, contact / identity information.  The genesis of this project was to create a separate piece of software to provide this functionality, so as to be able to be used by other software projects.
+I've been creating fairly complex, but monolithic, LAMP apps for both non- and for-profit companies for over 25 years.  My experience lies with small- and medium- sized organizations / businesses in the USA.  Most of these apps have, in one form or another, made heavy use of, or even dealt primarily with, contact / identity information.  The genesis of this project was to create a separate piece of software to provide this functionality, so as to be able to be used by other software projects.
 
 View my [LinkedIn Profile](https://www.linkedin.com/in/joethielen) for more professional (*or lack thereof*) information.
 
