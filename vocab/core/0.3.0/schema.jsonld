@@ -142,6 +142,15 @@
       "rdfs:label": "externalIdType"
     },  
     {
+      "@id": "http://cidme.net/vocab/core/0.3.0/ImageMetadata",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+      },
+      "rdfs:comment": "Identifies MetadataGroup resource as having image-related information for the MetadataGroup parent resource.",
+      "rdfs:label": "ImageMetadata"
+    },
+    {
       "@id": "http://cidme.net/vocab/core/0.3.0/LabelMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
