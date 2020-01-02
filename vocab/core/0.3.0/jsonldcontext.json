@@ -18,6 +18,7 @@
     "CreatedMetadata": {"@id": "cidme:CreatedMetadata/CreatedMetadata.jsonld"},
     "ModifiedMetadata": {"@id": "cidme:ModifiedMetadata/ModifiedMetadata.jsonld"},
     "LastModifiedMetadata": {"@id": "cidme:LastModifiedMetadata/LastModifiedMetadata.jsonld"},
+    "ImageMetadata": {"@id": "cidme:LabelMetadata/ImageMetadata.jsonld"},
     "LabelMetadata": {"@id": "cidme:LabelMetadata/LabelMetadata.jsonld"},
     "NoteMetadata": {"@id": "cidme:NoteMetadata/NoteMetadata.jsonld"},    
     "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
