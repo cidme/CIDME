@@ -110,6 +110,7 @@ The only other major usage of the term which turns up during web searches is a D
     * See the [*gh-pages* branch of the CIDME GitHub repository](https://github.com/cidme/CIDME/tree/gh-pages) to find the vocab directory.
   * [JavaScript/TypeScript CIDME Core implementation](http://github.com/cidme/CIDME-JS).
   * [JavaScript/Node-based Command-Line Interface (CLI) for CIDME Core](http://github.com/cidme/CIDME-CLI).
+  * [CIDME UI extensions](http://github.com/cidme/CIDME-UI).
 
 [*Back to TOC*](#toc)
 
@@ -123,6 +124,7 @@ This document serves as an overview of the various parts of the CIDME project.  
 * [CIDME/CIDME-Ext-Spec](http://github.com/CIDME/CIDME-Ext-Spec) - The CIDME Recommended Extensions specification.
 * [CIDME/CIDME-JS](http://github.com/CIDME/CIDME-JS) - The JavaScript (TypeScript) CIDME implementation.
 * [CIDME/CIDME-CLI](http://github.com/CIDME/CIDME-CLI) - The Node-based CIDME CLI.
+* [CIDME/CIDME-UI](http://github.com/CIDME/CIDME-UI) - User interface extensions for CIDME.
 
 Aside from these repositories, please refer to the [vocabulary definition files](http://cidme.net/vocab).  See the [*gh-pages* branch of the CIDME GitHub repository](https://github.com/cidme/CIDME/tree/gh-pages) to find the vocab directory.
 
