@@ -160,7 +160,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/displayName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
