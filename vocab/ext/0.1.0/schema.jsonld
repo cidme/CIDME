@@ -19,50 +19,50 @@
       "rdfs:label": "resourceStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Resource Status.",
       "rdfs:label": "ResourceStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/ActiveStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "ActiveStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/ArchivedStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "ArchivedStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/CanceledStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "CanceledStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/ConceptionStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "ConceptionStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/InactiveStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "InactiveStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/PurgedStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "PurgedStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/StagingStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "StagingStatus"
     },
@@ -79,32 +79,32 @@
       "rdfs:label": "resourceSuperStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus"
+      "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Resource Super Status.",
       "rdfs:label": "ResourceSuperStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/ActiveSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "ActingSuperStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/ArchivedSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "ArchivedSuperStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/InactiveSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "InactiveSuperStatus"
     },
     {
       "@id": "http://cidme.net/vocab/ext/0.1.0/StagingSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus"
+      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "StagingSuperStatus"
     },
@@ -172,7 +172,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/familyName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -184,7 +184,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/generationQualifier",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -196,7 +196,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/givenInformalName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -208,7 +208,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/givenName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -220,7 +220,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/indexName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -232,7 +232,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/middleName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -244,7 +244,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/nickName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -256,7 +256,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/prefixName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -268,7 +268,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/suffixName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -304,7 +304,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/default",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Boolean"
@@ -316,7 +316,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/type",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:Text"
@@ -328,7 +328,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/startDateTime",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:DateTime"
@@ -340,7 +340,7 @@
       "@id": "http://cidme.net/vocab/ext/0.1.0/endDateTime",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
-        "@id": "cidme:data",
+        "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
         "@id": "schema:DateTime"
