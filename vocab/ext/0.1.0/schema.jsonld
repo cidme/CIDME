@@ -349,7 +349,7 @@
       "rdfs:label": "endDateTime"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/PersonNameEntityContextData
+      "@id": "http://cidme.net/vocab/ext/0.1.0/PersonNameEntityContextData",
       "@type": "rdfs:Class",
       "rdfs:comment": "",
       "rdfs:label": "PersonNameEntityContextData"
