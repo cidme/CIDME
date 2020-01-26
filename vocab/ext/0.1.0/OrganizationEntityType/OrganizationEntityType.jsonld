@@ -1,0 +1,17 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/core/0.3.0/jsonldcontext.json",
+    "cidmeext": "http://cidme.net/vocab/ext/0.1.0/jsonldcontext.json"
+  },
+  "@graph": [
+    {
+      "@id": "http://cidme.net/vocab/ext/0.1.0/OrganizationEntityType",
+      "@type": "http://cidme.net/vocab/ext/0.1.0/EntityType",
+      "rdfs:comment": "",
+      "rdfs:label": "OrganizationEntityType"
+    }
+  ]
+}
