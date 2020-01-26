@@ -8,16 +8,10 @@
   },
   "@graph": [
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/resourceStatus",
-      "@type": "rdf:Property",
-      "schema:domainIncludes": {
-        "@id": "cidme:data"
-      },
-      "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
-      },
-      "rdfs:comment": "CIDME Resource Status.  For use with StatusMetadata metadata.",
-      "rdfs:label": "resourceStatus"
+      "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@type": "rdf:Class",
+      "rdfs:comment": "CIDME Resource Status.",
+      "rdfs:label": "ResourceStatus"
     }
   ]
 }
