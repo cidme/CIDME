@@ -208,7 +208,7 @@
           },
           "required": ["@context"],
           "additionalProperties": true
-        }
+        },
         "GroupDataType": {
           "title": "RDF metadata to describe data contained in data resource.",
           "type": "object",
