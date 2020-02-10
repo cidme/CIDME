@@ -3,14 +3,14 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "http://schema.org/",
-    "cidme": "http://cidme.net/vocab/core/0.3.0/jsonldcontext.json"
+    "cidme": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json"
   },
   "@graph": [
     {
       "@id": "cidme:NoteMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.3.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/data"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having note/comment-related information for the MetadataGroup parent resource.",
       "rdfs:label": "NoteMetadata"
