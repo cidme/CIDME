@@ -10,7 +10,7 @@
       "@id": "cidme:ModifiedMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.4.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/groupDataType"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having information relating to a given modification of the MetadataGroup parent resource.",
       "rdfs:label": "ModifiedMetadata"
