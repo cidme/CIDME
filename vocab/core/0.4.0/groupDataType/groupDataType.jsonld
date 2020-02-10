@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json"
+  },
+  "@id": "cidme:groupDataType",
+  "@type": "rdf:Property",
+  "schema:domainIncludes": [
+    {
+      "@id": "cidme:EntityContextDataGroup"
+    },
+    {
+      "@id": "cidme:EntityContextLinkGroup"
+    },
+    {
+      "@id": "cidme:MetadataGroup"
+    }
+  ],
+  "rdfs:comment": "CIDME Resource Group Data Type - May contain RDF describing a type which applies to everything in the data array for a given MetadataGroup, EntityContextDataGroup, or EntityContextLinkGroup.",
+  "rdfs:label": "data"
+}
