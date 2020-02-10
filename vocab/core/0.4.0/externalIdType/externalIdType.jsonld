@@ -1,0 +1,22 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json"
+  },
+  "@id": "cidme:externalIdType",
+  "@type": "rdf:Property",
+  "schema:domainIncludes": [
+    {
+      "@id": "cidme:data"
+    }
+  ],
+  "schema:rangeIncludes": [
+    {
+      "@id": "schema:Text"
+    }
+  ],  
+  "rdfs:comment": "If cidme:externalId is specified, this may be used to denote what type of ID was specified (SSN, Drivers license, DB record, etc...).",
+  "rdfs:label": "externalIdType"
+}
