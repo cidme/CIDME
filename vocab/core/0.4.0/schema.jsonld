@@ -21,7 +21,7 @@
       "@id": "http://cidme.net/vocab/core/0.4.0/CreatedMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.4.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/groupDataType"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having information relating to the creation of the MetadataGroup parent resource.",
       "rdfs:label": "CreatedMetadata"
@@ -41,6 +41,23 @@
         }
       ],
       "rdfs:comment": "CIDME Resource Data.",
+      "rdfs:label": "data"
+    },
+    {
+      "@id": "cidme:groupDataType",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "cidme:EntityContextDataGroup"
+        },
+        {
+          "@id": "cidme:EntityContextLinkGroup"
+        },
+        {
+          "@id": "cidme:MetadataGroup"
+        }
+      ],
+      "rdfs:comment": "CIDME Resource Group Data Type - May contain RDF describing a type which applies to everything in the data array for a given MetadataGroup, EntityContextDataGroup, or EntityContextLinkGroup.",
       "rdfs:label": "data"
     },
     {
@@ -145,7 +162,7 @@
       "@id": "http://cidme.net/vocab/core/0.4.0/ImageMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.4.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/groupDataType"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having image-related information for the MetadataGroup parent resource.",
       "rdfs:label": "ImageMetadata"
@@ -154,7 +171,7 @@
       "@id": "http://cidme.net/vocab/core/0.4.0/LabelMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.4.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/groupDataType"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having label-related information for the MetadataGroup parent resource.",
       "rdfs:label": "LabelMetadata"
@@ -163,7 +180,7 @@
       "@id": "http://cidme.net/vocab/core/0.4.0/LastModifiedMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.4.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/groupDataType"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having information relating to the most recent modification of the MetadataGroup parent resource.",
       "rdfs:label": "LastModifiedMetadata"
@@ -207,7 +224,7 @@
       "@id": "http://cidme.net/vocab/core/0.4.0/ModifiedMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.4.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/groupDataType"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having information relating to a given modification of the MetadataGroup parent resource.",
       "rdfs:label": "ModifiedMetadata"
@@ -216,7 +233,7 @@
       "@id": "http://cidme.net/vocab/core/0.4.0/NoteMetadata",
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
-        "@id": "http://cidme.net/vocab/core/0.4.0/data"
+        "@id": "http://cidme.net/vocab/core/0.4.0/groupDataType"
       },
       "rdfs:comment": "Identifies MetadataGroup resource as having note/comment-related information for the MetadataGroup parent resource.",
       "rdfs:label": "NoteMetadata"
