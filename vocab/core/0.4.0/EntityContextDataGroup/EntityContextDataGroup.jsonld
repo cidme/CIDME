@@ -11,7 +11,7 @@
       "@type": "rdfs:Class",
       "schema:domainIncludes": {
         "@id": "cidme:entityContextData"
-      }
+      },
       "rdfs:comment": "CIDME Entity Context Data Group.  All data associated with an Entity Context other than that which would fit in another CIDME resource type.  Multiple data can be grouped together for aggregation purposes.",
       "rdfs:label": "EntityContextDataGroup"
     }
