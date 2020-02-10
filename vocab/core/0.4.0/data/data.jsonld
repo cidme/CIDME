@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "cidme": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json"
+  },
+  "@id": "cidme:data",
+  "@type": "rdf:Property",
+  "schema:domainIncludes": [
+    {
+      "@id": "cidme:EntityContextDataGroup"
+    },
+    {
+      "@id": "cidme:EntityContextLinkGroup"
+    },
+    {
+      "@id": "cidme:MetadataGroup"
+    }
+  ],
+  "rdfs:comment": "CIDME Resource Data.",
+  "rdfs:label": "data"
+}
