@@ -51,7 +51,7 @@ Hence the CIDME project acronym:  Contextualized IDentity Management Engine.
 
 At the heart of CIDME are the entities and entity contexts.  These are realized via JSON-LD serialized strings (RDF can also be used) and are referred to as resources.  These resources themselves are natively operating system and programming language agnostic.  This means any programming language which has support for JSON and/or JSON-LD has the functionality necessary to deal with CIDME resources. 
 
-An *extremely minimial* example of a CIDME entity resource for purely illustrative purposes:
+An *extremely minimal* example of a CIDME entity resource for purely illustrative purposes:
 ```json
 {
     "@context": "http://cidme.net/vocab/0.2.0/jsonldcontext.json",
