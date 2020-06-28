@@ -1,6 +1,6 @@
 # CIDME Example 02 - Slightly less simple CIDME entity and entity context - annotated
 
-This example builds upon the example described in (example 01)[example-01-simple_CIDME_entity_and_entity_context-annotated.md] and adds a few more features:
+This example builds upon the example described in [example 01](example-01-simple_CIDME_entity_and_entity_context-annotated.md) and adds a few more features:
 - Label metadata
 - Entity type metadata
 - Entity context data
