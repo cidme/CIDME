@@ -120,7 +120,11 @@ The only other major usage of the term which turns up during web searches is a D
 <a name="docs"/></a>
 ## Documentation
 
-This document serves as an overview of the various parts of the CIDME project.  There are a few different GitHub repositories for more information on specific portions:
+This document serves as an overview of the various parts of the CIDME project.  
+
+Examples, and other docs, can be found in the [docs](docs) directory.
+
+There are a few different GitHub repositories for more information on specific portions:
 
 * [CIDME/CIDME-Core-Spec](http://github.com/CIDME/CIDME-Core-Spec) - The CIDME Core specification.
 * [CIDME/CIDME-Ext-Spec](http://github.com/CIDME/CIDME-Ext-Spec) - The CIDME Recommended Extensions specification.
