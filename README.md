@@ -54,7 +54,7 @@ At the heart of CIDME are the entities and entity contexts.  These are realized 
 An *extremely minimal* example of a CIDME entity resource for purely illustrative purposes:
 ```json
 {
-    "@context": "http://cidme.net/vocab/0.2.0/jsonldcontext.json",
+    "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
     "@type": "Entity",
     "@id": "cidme://local/Entity/db9b4bdb-50b7-483d-95a6-b3884ecd4137"
 }
