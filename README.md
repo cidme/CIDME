@@ -60,6 +60,8 @@ An *extremely minimal* example of a CIDME entity resource for purely illustrativ
 }
 ```
 
+Please see the [docs](docs) folder for more examples (annotated, even)!!!
+
 As CIDME resources are just strings, they may be stored in many different ways.  The CIDME project was envisioned to be able to be used by a very, very wide audience of developers on an equally wide variety of platforms.  One goal of CIDME is that resources may be used on embedded platforms with very limited computational power and memory.   It is also envisioned they may be used on extremely scaled up scenarios involving databases of millions upon millions of resources.
 
 It is envisioned that CIDME may cover the gambit of being used in very simple ways, such as by a single developer working on a small home-brew project involving batch/shell scripts all the way to being scaled up for use in complex scenarios involving AI with semantic understanding of the linked data!
