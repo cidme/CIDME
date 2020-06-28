@@ -1,7 +1,8 @@
 # CIDME Example 02 - Slightly less simple CIDME entity and entity context - annotated
 
 This example builds upon the example described in (example 01)[example-01-simple_CIDME_entity_and_entity_context-annotated.md] and adds a few more features:
-- Labels
+- Label metadata
+- Entity type metadata
 - Entity context data
 
 Full CIDME JSON-LD:
@@ -132,6 +133,63 @@ Full CIDME JSON-LD:
               },
               "modified": "2020-06-28T20:38:26.039Z",
               "creator": null
+            }
+          ]
+        }
+      ],
+      "entityContextData": [
+        {
+          "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+          "@type": "EntityContextDataGroup",
+          "@id": "cidme://local/EntityContextDataGroup/a9a5f72c-89cf-4e05-94b0-929cf01bad8c",
+          "data": [
+            {
+              "@context": {
+                "@vocab": "http://xmlns.com/foaf/0.1/"
+              },
+              "homepage": "https://github.com/cidme/CIDME/blob/master/docs/example-01-simple_CIDME_entity_and_entity_context-annotated.md"
+            }
+          ],
+          "metadata": [
+            {
+              "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+              "@type": "MetadataGroup",
+              "@id": "cidme://local/MetadataGroup/026fd089-a208-499b-856d-a1a0b0d726be",
+              "groupDataType": [
+                {
+                  "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+                  "@type": "CreatedMetadata"
+                }
+              ],
+              "data": [
+                {
+                  "@context": {
+                    "@vocab": "http://purl.org/dc/terms/"
+                  },
+                  "created": "2020-06-28T20:38:26.038Z",
+                  "creator": null
+                }
+              ]
+            },
+            {
+              "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+              "@type": "MetadataGroup",
+              "@id": "cidme://local/MetadataGroup/23ac8746-f641-409d-bb72-25e8b16aa63b",
+              "groupDataType": [
+                {
+                  "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+                  "@type": "LastModifiedMetadata"
+                }
+              ],
+              "data": [
+                {
+                  "@context": {
+                    "@vocab": "http://purl.org/dc/terms/"
+                  },
+                  "modified": "2020-06-28T20:38:26.039Z",
+                  "creator": null
+                }
+              ]
             }
           ]
         }
