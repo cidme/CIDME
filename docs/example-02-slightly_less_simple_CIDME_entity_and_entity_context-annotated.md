@@ -198,3 +198,67 @@ Full CIDME JSON-LD:
   ]
 }
 ```
+
+The first thing we're going to look at in this example is the third element of the metadata array of the top-most element, the CIDME entity.
+
+```json
+    {
+      "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+      "@type": "MetadataGroup",
+      "@id": "cidme://local/MetadataGroup/c729d415-8e08-4d61-ba9a-286bc7fb942e",
+      "groupDataType": [
+        {
+          "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+          "@type": "LabelMetadata"
+        }
+      ],
+      "data": [
+        {
+          "@context": {
+            "@vocab": "http://www.w3.org/2004/02/skos/core#"
+          },
+          "prefLabel": "CIDME Example Entity"
+        }
+      ]
+    },
+```
+
+In the *groupDataType* array we're specifying this as *label metadata*.  In the *data* array we're providing a [*SKOS prefLabel*](https://www.w3.org/2009/08/skos-reference/skos.html#prefLabel), in otherwords - a preferred label.  This acts together to provide an easy-to-reference human-readable label for our CIDME entity.
+
+Now we have a better idea of what this CIDME entity refers to.
+
+The very next metadata array element is our next focus:
+
+```json
+    {
+      "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+      "@type": "MetadataGroup",
+      "@id": "cidme://local/MetadataGroup/ab092690-4d9a-4b2b-bb6e-67815471a596",
+      "groupDataType": [
+        {
+          "@context": "http://cidme.net/vocab/ext/0.1.0/jsonldcontext.json",
+          "@type": "entityTypeMetadata"
+        }
+      ],
+      "data": [
+        {
+          "@context": "http://cidme.net/vocab/ext/0.1.0/jsonldcontext.json",
+          "entityType": "http://cidme.net/vocab/ext/0.1.0/ThingEntityType"
+        }
+      ]
+    }
+```
+
+In the *groupDataType* array we're specifying this as *entity type metadata*.  In the *data* array we're providing an entity type of *ThingEntityType*.
+
+CIDME divides all entites into one of four categories:
+- People
+- Organizations
+- Places
+- Things
+
+In the previous item we labeled this entity as our CIDME example entity.  It's not a person, organization, or place.  But it sure is a thing.  *Thing* covers a whole lot of ground... tangible and not.  In fact, it could be argued that people, organizations, and places are subsets of things.  But that being the case, what would you call something that's not a person, organization, or place??
+
+Anyway, we've added some helpful info here.  When searching through CIDME entities, being able to filter by entity type can be extremely helpful.
+
+
