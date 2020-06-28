@@ -261,4 +261,28 @@ In the previous item we labeled this entity as our CIDME example entity.  It's n
 
 Anyway, we've added some helpful info here.  When searching through CIDME entities, being able to filter by entity type can be extremely helpful.
 
+Finally, in our entity context we have this (metadata removed for easier reading):
+
+```json
+      "entityContextData": [
+        {
+          "@context": "http://cidme.net/vocab/core/0.4.0/jsonldcontext.json",
+          "@type": "EntityContextDataGroup",
+          "@id": "cidme://local/EntityContextDataGroup/a9a5f72c-89cf-4e05-94b0-929cf01bad8c",
+          "data": [
+            {
+              "@context": {
+                "@vocab": "http://xmlns.com/foaf/0.1/"
+              },
+              "homepage": "https://github.com/cidme/CIDME/blob/master/docs/example-01-simple_CIDME_entity_and_entity_context-annotated.md"
+            }
+          ],
+          "metadata": []
+        }
+      ]
+```
+
+Note that we don't have a groupDataType array here.  It's not required.  So in this example we're skipping it.  Could it help?  For sure.  Should it have one?  Likely. So why doesn't this one have it?  Because, for just one JSON-LD node, we're going to be rebels.  *Savor it*.
+
+So what we're doing here is defining a [FOAF](http://www.foaf-project.org/) *homepage*.  We're saying the URL we've specified is the homepage for this thing.
 
