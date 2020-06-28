@@ -32,7 +32,7 @@ CIDME is an umbrella software project which encompasses a set of specifications 
 
 <a name="audience"/></a>
 ## Intended audience
-CIDME is not meant for use by non-developer end-users.  CIDME is not an app, nor a program.  CIDME is for use by other software developers / projects and is meant to be built upon.  Many software projects, from the smallest batch scripts to the largest enterprise implementations, need a way to store information about various entities (people, organizations, places, and things).  CIDME is an attempt to standardize how this is done, creating a re-usable means to do so, allowing other software developers / projects to save time in not having to re-create this functionality while also allowing for a means for sharing this information in a standardized manner.
+CIDME is currently meant for use by software developers.  CIDME is not an app, nor a program.  CIDME is for use by other software developers / projects and is meant to be built upon.
 
 [*Back to TOC*](#toc)
 
@@ -43,13 +43,13 @@ CIDME is an umbrella software project which encompasses a set of specifications 
 
 In many cases, existing software projects attempt to lump all information about an entity into one place, when instead that information may be better separated into distinct parts, while still maintaining links to each other, forming parts of a whole.  Contact information, for example.  Let's give an example where a person has multiple jobs.  They may have many phone numbers and email addresses, especially over time.  A personal-use set of contact information, one set for one job, and still another set for the other job!  The address books and contact managers we currently use tend to not easily allow us to manage information this way.  You have no idea if a number is attached to a given job... only that it's labeled as 'work'.   Additionally, as people drop old numbers and addresses and adopt new ones, history becomes muddled.  When looking through old emails you may come across a cryptic address (ed209@example.com) and wonder, who was that?  The context has been lost.  You've since deleted that email address from your contact manager because the person doesn't use it any more.  You don't want to keep it listed for fear of accidentally sending a new email to that old address.  But wouldn't it be nice to still have a way to keep it somewhere for posterity?
 
-CIDME allows you to keep this information, group it, and give it context.  Here, we can create at least three contexts... one for personal-use information, and one for each of the two jobs.  You can then associate their personal/private contact information with the personal one, then the relevant items with the appropriate job-related contexts.  When this person switches jobs you can still keep this information, but give it a date-range, so you know it was only valid at that time.  You can also give it an inactive status, so it does not show up as an available address when creating new emails, sending texts, or making a phone call.  The end result is you can go back and look up ed209@example.com and note it related to our example person, and the fact that they used it while working at a certain job during a given time (date range), but know to not use this information for new contacts with this person.  CIDME gives context to this identity information.
+CIDME allows you to keep information, group it, and give it context.  In the example situation above, we can create at least three contexts... one for personal-use information, and one for each of the two jobs.  You can associate their personal/private contact information with the personal one, and the relevant items with the appropriate job-related contexts.  When this person switches jobs you can still keep this information, but give it a date-range, so you know it was only valid at that time.  You can also give it an inactive status, so it does not show up as an available address when creating new emails, sending texts, or making a phone call.  The end result is you can go back and look up ed209@example.com and note it related to our example person, and the fact that they used it while working at a certain job during a given time (date range), but know to not use this information for new contacts with this person.  CIDME gives context to this identity information.
 
-CIDME is all about managing this information.  Not simply just at one given point in time, but also managing information as it ages and/or about an entity's state at different points in time.  For example, both people and organizations change their names or contact information.  Instead of just deleting or changing the existing information in your system about these entities, CIDME allows you to keep it, referencing it by dates in time or status (active/inactive).  CIDME also allows for structured archiving and/or purging of old information.  CIDME can be referred to as an engine to manage this information.
+CIDME is all about managing this information.  Not simply at one given point in time, but also as it ages and/or about an entity's state at different points in time.  For example, both people and organizations change their names or contact information.  Instead of just deleting or changing the existing information in your system about these entities, CIDME allows you to keep it, referencing it by dates in time or status (active/inactive).  CIDME also allows for structured archiving and/or purging of old information.  CIDME can be referred to as an engine to manage this information.
 
-Hence the CIDME project acronym:  Contextualized IDentity Management Engine.
+Hence the CIDME project acronym:  ***C**ontextualized **ID**entity **M**anagement **E**ngine.*
 
-At the heart of CIDME are the entities and entity contexts.  These are realized via JSON-LD serialized strings (RDF can also be used) and are referred to as resources.  These resources themselves are natively operating system and programming language agnostic.  This means any programming language which has support for JSON and/or JSON-LD has the functionality necessary to deal with CIDME resources. 
+At the heart of CIDME are the entities and entity contexts.  These are realized via JSON-LD serialized strings and are referred to as resources.  These resources themselves are natively operating system and programming language agnostic.  This means any programming language which has support for JSON and/or JSON-LD has the functionality necessary to deal with CIDME resources. 
 
 An *extremely minimal* example of a CIDME entity resource for purely illustrative purposes:
 ```json
@@ -60,9 +60,9 @@ An *extremely minimal* example of a CIDME entity resource for purely illustrativ
 }
 ```
 
-As CIDME resources are just strings, they may be stored in many different ways.  The CIDME project was envisioned to be able to be used by a very, very wide audience of developers on an equally wide variety of platforms.  CIDME resources may be used on embedded platforms with very limited computational power and memory.   Likewise they may be used on extremely scaled up scenarios involving databases of millions upon millions of resources.
+As CIDME resources are just strings, they may be stored in many different ways.  The CIDME project was envisioned to be able to be used by a very, very wide audience of developers on an equally wide variety of platforms.  One goal of CIDME is that resources may be used on embedded platforms with very limited computational power and memory.   It is also envisioned they may be used on extremely scaled up scenarios involving databases of millions upon millions of resources.
 
-Additionally, CIDME may be used in very simple ways, such as by a single developer working on a small home-brew project involving batch/shell scripts.  However, it can also be scaled up for use in complex scenarios involving AI with semantic understanding of the linked data!
+It is envisioned that CIDME may cover the gambit of being used in very simple ways, such as by a single developer working on a small home-brew project involving batch/shell scripts all the way to being scaled up for use in complex scenarios involving AI with semantic understanding of the linked data!
 
 CIDME usage examples... CIDME does not necessarily DO all of the these items, but it does provide a standardized way of managing data that can enable these types of systems.
 
@@ -93,9 +93,9 @@ Complex:
 <a name="whythename"/></a>
 ## Why the name *CIDME*?
 
-After putting a considerable amount of thought into what this project was to be, as well as what it was not, the CIDME acronym was chosen as it's contents best accurately describes what the project provides.  An _engine_ to _manage contextualized identity_ information.  
+After putting a considerable amount of thought into what this project was to be, as well as what it was not, the CIDME acronym was chosen as it's contents best accurately describes what the project provides.  An _engine_ to _manage contextualized identity_ information.
 
-The only other major usage of the term which turns up during web searches is a Dental clinic in Spain.  I figured the acronym was unique enough to use and build upon for a software project.
+The only other major usage of the term which turns up during web searches is a Dental clinic in Spain.  The acronym was unique enough to use and build upon for a software project.
 
 [*Back to TOC*](#toc)
 
@@ -104,7 +104,7 @@ The only other major usage of the term which turns up during web searches is a D
 ## Current project status
 
 * The project was first created in October 2016 and has undergone several major foundational changes.
-* As of Jan 2020 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
+* As of June 2020 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
 * Actual code (_all currently in **alpha** stages!_):
   * [vocabulary definition files](http://cidme.net/vocab).  
     * See the [*gh-pages* branch of the CIDME GitHub repository](https://github.com/cidme/CIDME/tree/gh-pages) to find the vocab directory.
@@ -118,7 +118,7 @@ The only other major usage of the term which turns up during web searches is a D
 <a name="docs"/></a>
 ## Documentation
 
-This document serves as an overview of the various parts of the CIDME project.  There are a few different GitHub repositories for more  information on specific portions:
+This document serves as an overview of the various parts of the CIDME project.  There are a few different GitHub repositories for more information on specific portions:
 
 * [CIDME/CIDME-Core-Spec](http://github.com/CIDME/CIDME-Core-Spec) - The CIDME Core specification.
 * [CIDME/CIDME-Ext-Spec](http://github.com/CIDME/CIDME-Ext-Spec) - The CIDME Recommended Extensions specification.
