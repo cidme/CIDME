@@ -1,0 +1,156 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "https://schema.org/",
+    "cidme": "http://cidme.net/vocab/core/0.6.0/"
+},
+"@graph": [
+    {
+      "@id": "cidme:data",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "cidme:EntityContextDataGroup"
+        },
+        {
+          "@id": "cidme:EntityContextLinkDataGroup"
+        },
+        {
+          "@id": "cidme:MetadataGroup"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "cidme:RdfData"
+      },
+      "rdfs:comment": "CIDME Resource Data.",
+      "rdfs:label": "data"
+    },
+    {
+      "@id": "cidme:Entity",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Top-level CIDME object.",
+      "rdfs:label": "Entity"
+    },
+    {
+      "@id": "cidme:entityContexts",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "cidme:Entity"
+        },
+        {
+          "@id": "cidme:EntityContext"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "cidme:EntityContext"
+      },
+      "rdfs:comment": "CIDME Entity Context array (set).",
+      "rdfs:label": "entityContexts"
+    },
+    {
+      "@id": "cidme:EntityContext",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:entityContexts"
+      },
+      "rdfs:comment": "CIDME Entity Context.  A context represents one aspect of an Entity.",
+      "rdfs:label": "EntityContext"
+    },
+    {
+      "@id": "cidme:entityContextDataGroups",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "cidme:EntityContext"
+      },
+      "schema:rangeIncludes": {
+        "@id": "cidme:EntityContextDataGroup"
+      },
+      "rdfs:comment": "CIDME Entity Context Data.",
+      "rdfs:label": "entityContextDataGroups"
+    },
+    {
+      "@id": "cidme:EntityContextDataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:entityContextDataGroups"
+      },
+      "rdfs:comment": "CIDME Entity Context Data Group.  All data associated with an Entity Context other than that which would fit in another CIDME resource type.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "EntityContextDataGroup"
+    },
+    {
+      "@id": "cidme:entityContextLinkDataGroups",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "cidme:EntityContext"
+      },
+      "schema:rangeIncludes": {
+        "@id": "cidme:EntityContextLinkDataGroup"
+      },
+      "rdfs:comment": "CIDME Entity Context Link Data Groups.",
+      "rdfs:label": "entityContextLinkDataGroups"
+    },
+    {
+      "@id": "cidme:EntityContextLinkDataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:entityContextLinks"
+      },
+      "rdfs:comment": "CIDME Entity Context Link Group.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME library a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME library.",
+      "rdfs:label": "EntityContextLinkDataGroup"
+    },
+    {
+      "@id": "cidme:metadataGroups",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "cidme:Entity"
+        },
+        {
+          "@id": "cidme:EntityContext"
+        },
+        {
+          "@id": "cidme:EntityContextDataGroup"
+        },
+        {
+          "@id": "cidme:EntityContextLinkDataGroup"
+        },
+        {
+          "@id": "cidme:MetadataGroup"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "cidme:MetadataGroup"
+      },
+      "rdfs:comment": "CIDME Resource Metadata.",
+      "rdfs:label": "metadataGroups"
+    },
+    {
+      "@id": "cidme:MetadataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:metadataGroups"
+      },
+      "rdfs:comment": "CIDME Metadata Group.  Metadata associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, EntityContextLinkDataGroup, or another MetadataGroup).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "MetadataGroup"
+    },
+    {
+      "@id": "cidme:RdfData",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": [
+        {
+          "@id": "cidme:EntityContextDataGroup"
+        },
+        {
+          "@id": "cidme:EntityContextLinkDataGroup"
+        },
+        {
+          "@id": "cidme:MetadataGroup"
+        }
+      ],
+      "rdfs:comment": "CIDME RDF Data Group.  Contains RDF data related to/describing the CIDME resource the parent resource is attached to.",
+      "rdfs:label": "RdfData"
+    }
+  ]
+}
