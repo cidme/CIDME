@@ -7,7 +7,16 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:entityContextDataGroups",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": {
+        "@id": "cidme:EntityContext"
+      },
+      "schema:rangeIncludes": {
+        "@id": "cidme:EntityContextDataGroup"
+      },
+      "rdfs:comment": "CIDME Entity Context Data.",
+      "rdfs:label": "entityContextDataGroups"
     }
   ]
 }
