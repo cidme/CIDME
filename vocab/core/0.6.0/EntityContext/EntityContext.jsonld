@@ -7,7 +7,13 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:EntityContext",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:entityContexts"
+      },
+      "rdfs:comment": "CIDME Entity Context.  A context represents one aspect of an Entity.",
+      "rdfs:label": "EntityContext"
     }
   ]
 }
