@@ -7,7 +7,30 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:metaDataGroups",
+      "@type": "rdf:Property",
+      "schema:domainIncludes": [
+        {
+          "@id": "cidme:Entity"
+        },
+        {
+          "@id": "cidme:EntityContext"
+        },
+        {
+          "@id": "cidme:EntityContextDataGroup"
+        },
+        {
+          "@id": "cidme:EntityContextLinkDataGroup"
+        },
+        {
+          "@id": "cidme:MetaDataGroup"
+        }
+      ],
+      "schema:rangeIncludes": {
+        "@id": "cidme:MetaDataGroup"
+      },
+      "rdfs:comment": "CIDME Resource MetaData.",
+      "rdfs:label": "metaDataGroups"
     }
   ]
 }
