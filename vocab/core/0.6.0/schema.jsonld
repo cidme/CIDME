@@ -4,8 +4,14 @@
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "https://schema.org/",
     "cidme": "http://cidme.net/vocab/core/0.6.0/"
-},
-"@graph": [
+  },
+  "@graph": [
+    {
+      "@id": "cidme:CreatedMetadata",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Identifies MetadataGroup resource as having information relating to the creation of the MetadataGroup parent resource.",
+      "rdfs:label": "CreatedMetadata"
+    },  
     {
       "@id": "cidme:data",
       "@type": "rdf:Property",
@@ -101,6 +107,24 @@
       "rdfs:label": "EntityContextLinkDataGroup"
     },
     {
+      "@id": "cidme:ImageMetadata",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Identifies MetadataGroup resource as having image-related information for the MetadataGroup parent resource.",
+      "rdfs:label": "ImageMetadata"
+    },
+    {
+      "@id": "cidme:LabelMetadata",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Identifies MetadataGroup resource as having label-related information for the MetadataGroup parent resource.",
+      "rdfs:label": "LabelMetadata"
+    },
+    {
+      "@id": "cidme:LastModifiedMetadata",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Identifies MetadataGroup resource as having information relating to the most recent modification of the MetadataGroup parent resource.",
+      "rdfs:label": "LastModifiedMetadata"
+    },
+    {
       "@id": "cidme:metadataGroups",
       "@type": "rdf:Property",
       "schema:domainIncludes": [
@@ -134,6 +158,12 @@
       },
       "rdfs:comment": "CIDME Metadata Group.  Metadata associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, EntityContextLinkDataGroup, or another MetadataGroup).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
       "rdfs:label": "MetadataGroup"
+    },
+    {
+      "@id": "cidme:NoteMetadata",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Identifies MetadataGroup resource as having note/comment-related information for the MetadataGroup parent resource.",
+      "rdfs:label": "NoteMetadata"
     },
     {
       "@id": "cidme:RdfData",
