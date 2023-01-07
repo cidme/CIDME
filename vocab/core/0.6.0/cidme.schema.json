@@ -1,0 +1,282 @@
+{
+  "id": "http://cidme.net/vocab/core/0.6.0/cidme.schema.json",
+  "title": "CIDME Entity",
+  "type": "object",
+  "definitions": {
+    "@context": {
+      "type": ["string", "object"]
+    },
+    "Entity": {
+      "title": "CIDME Entity Resource",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "$ref": "#/definitions/@context"
+        },
+        "@id": {
+          "type": "string",
+          "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/Entity\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+        },
+        "@type": {
+          "type": "string",
+          "enum": ["cidme:Entity"]
+        },
+        "cidme:entityContexts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntityContext"
+          }
+        },
+        "cidme:metadataGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MetadataGroup"
+          }
+        }
+      },
+      "required": ["@context", "@id", "@type"],
+      "additionalProperties": false
+    },
+    "EntityContext": {
+      "title": "CIDME EntityContext Resource",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "$ref": "#/definitions/@context"
+        },
+        "@id": {
+          "type": "string",
+          "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/EntityContext\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+        },
+        "@type": {
+          "type": "string",
+          "enum": ["cidme:EntityContext"]
+        },
+        "cidme:entityContexts": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntityContext"
+          }
+        },
+        "cidme:entityContextLinkDataGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntityContextLinkDataGroup"
+          }
+        },
+        "cidme:entityContextDataGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntityContextDataGroup"
+          }
+        },
+        "cidme:metadataGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MetadataGroup"
+          }
+        }
+      },
+      "required": ["@context", "@id", "@type"],
+      "additionalProperties": false
+    },
+    "EntityContextLinkDataGroup": {
+      "title": "CIDME EntityContextLinkDataGroup Resource",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "$ref": "#/definitions/@context"
+        },
+        "@id": {
+          "type": "string",
+          "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/DataGroup\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+        },
+        "@type": {
+          "type": "string",
+          "enum": ["cidme:EntityContextLinkDataGroup"]
+        },
+        "cidme:metadataGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MetadataGroup"
+          }
+        },
+        "cidme:data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RdfData"
+          }
+        }
+      },
+      "required": ["@id", "@type"],
+      "additionalProperties": false
+    },
+    "EntityContextDataGroup": {
+      "title": "CIDME EntityContextDataGroup Resource",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "$ref": "#/definitions/@context"
+        },
+        "@id": {
+          "type": "string",
+          "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/DataGroup\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+        },
+        "@type": {
+          "type": "string",
+          "enum": ["cidme:EntityContextDataGroup"]
+        },
+        "cidme:metadataGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MetadataGroup"
+          }
+        },
+        "cidme:data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RdfData"
+          }
+        }
+      },
+      "required": ["@id", "@type"],
+      "additionalProperties": false
+    },
+    "MetadataGroup": {
+      "title": "CIDME MetadataGroup Resource",
+      "type": "object",
+      "properties": {
+        "@id": {
+          "type": "string",
+          "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/DataGroup\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+        },
+        "@type": {
+          "type": "string",
+          "enum": ["cidme:MetadataGroup"]
+        },
+        "cidme:metadataGroups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MetadataGroup"
+          }
+        },
+        "cidme:data": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RdfData"
+          }
+        }
+      },
+      "required": ["@id", "@type"],
+      "additionalProperties": false
+    },
+    "rdfPredicate": {
+      "title": "CIDME RDF Data Resource - rdf:predicate property",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "$ref": "#/definitions/@context"
+        },
+        "@id": {
+          "type": "string"
+        }
+      },
+      "required": ["@id", "@context"],
+      "additionalProperties": false
+    },
+    "rdfObject": {
+      "title": "CIDME RDF Data Resource - rdf:object property",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "$ref": "#/definitions/@context"
+        },
+        "@id": {
+          "type": "string"
+        },
+        "@value": {
+          "type": ["string", "null", "boolean", "number"]
+        }
+      },
+      "additionalProperties": false
+    },
+    "RdfData": {
+      "title": "CIDME RDF Data Resource",
+      "type": "object",
+      "properties": {
+        "@context": {
+          "$ref": "#/definitions/@context"
+        },
+        "@id": {
+          "type": "string",
+          "pattern": "^[cC][iI][dD][mM][eE]\\:\\/\\/RdfData\\/[a-f0-9]{8}\\-[a-f0-9]{4}\\-4[a-f0-9]{3}\\-(8|9|a|b)[a-f0-9]{3}\\-[a-f0-9]{12}$"
+        },
+        "@type": {
+          "type": "array",
+          "items": {
+              "type": "string"
+          }
+        },
+        "rdf:predicate": {
+          "$ref": "#/definitions/rdfPredicate"
+        },
+        "rdf:object": {
+          "$ref": "#/definitions/rdfObject"
+        }
+      },
+      "required": ["@id", "@type", "rdf:predicate", "rdf:object"],
+      "additionalProperties": false
+    }
+  },
+  "if": {
+    "properties": {
+      "@type": { "enum": ["cidme:Entity"] }
+    }
+  },
+  "then": {
+    "$ref": "#/definitions/Entity"
+  },
+  "else": {
+    "if": {
+      "properties": {
+        "@type": { "enum": ["cidme:EntityContext"] }
+      }
+    },
+    "then": {
+      "$ref": "#/definitions/EntityContext"
+    },
+    "else": {
+      "if": {
+        "properties": {
+          "@type": { "enum": ["cidme:EntityContextLinkDataGroup"] }
+        }
+      },
+      "then": {
+        "$ref": "#/definitions/EntityContextLinkDataGroup"
+      },
+      "else": {
+        "if": {
+          "properties": {
+            "@type": { "enum": ["cidme:EntityContextDataGroup"] }
+          }
+        },
+        "then": {
+          "$ref": "#/definitions/EntityContextDataGroup"
+        },
+        "else": {
+          "if": {
+            "properties": {
+              "@type": { "enum": ["cidme:MetadataGroup"] }
+            }
+          },
+          "then": {
+            "$ref": "#/definitions/MetadataGroup"
+          },
+          "else": {
+            "$ref": "#/definitions/RdfData"
+          }
+        }
+      }
+    }
+  }
+}
