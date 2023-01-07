@@ -1,0 +1,28 @@
+{
+  "@context": {
+    "type": "@type",
+    "id": "@id",
+    "@vocab": "http://cidme.net/vocab/core/0.6.0/",
+    "cidme": "http://cidme.net/vocab/core/0.6.0/",
+    "cidmeUri": {"@id": "cidme:cidmeUri/cidmeUri.jsonld"},
+    "data": {"@id": "cidme:data/data.jsonld"},
+    "groupDataType": {"@id": "cidme:groupDataType/groupDataType.jsonld"},
+    "Entity": {"@id": "cidme:Entity/Entity.jsonld"},
+    "entityContexts": {"@id": "cidme:entityContexts/entityContexts.jsonld"},
+    "EntityContext": {"@id": "cidme:EntityContext/EntityContext.jsonld"},
+    "entityContextDataGroups": {"@id": "cidme:entityContextData/entityContextDataGroups.jsonld"},
+    "EntityContextDataGroup": {"@id": "cidme:EntityContextDataGroup/EntityContextDataGroup.jsonld"},
+    "entityContextLinkDataGroupss": {"@id": "cidme:entityContextLinks/entityContextLinkDataGroups.jsonld"},
+    "EntityContextLinkDataGroup": {"@id": "cidme:EntityContextLinkGroup/EntityContextLinkDataGroup.jsonld"},
+    "externalId": {"@id": "cidme:externalId/externalId.jsonld"},
+    "externalIdType": {"@id": "cidme:externalIdType/externalIdType.jsonld"},
+    "CreatedMetadata": {"@id": "cidme:CreatedMetadata/CreatedMetadata.jsonld"},
+    "ModifiedMetadata": {"@id": "cidme:ModifiedMetadata/ModifiedMetadata.jsonld"},
+    "LastModifiedMetadata": {"@id": "cidme:LastModifiedMetadata/LastModifiedMetadata.jsonld"},
+    "ImageMetadata": {"@id": "cidme:LabelMetadata/ImageMetadata.jsonld"},
+    "LabelMetadata": {"@id": "cidme:LabelMetadata/LabelMetadata.jsonld"},
+    "NoteMetadata": {"@id": "cidme:NoteMetadata/NoteMetadata.jsonld"},    
+    "metadata": {"@id": "cidme:metadata/metadata.jsonld"},
+    "MetadataGroup": {"@id": "cidme:MetadataGroup/MetadataGroup.jsonld"}
+  }
+}
