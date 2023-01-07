@@ -7,7 +7,21 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:RdfData",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": [
+        {
+          "@id": "cidme:EntityContextDataGroup"
+        },
+        {
+          "@id": "cidme:EntityContextLinkDataGroup"
+        },
+        {
+          "@id": "cidme:MetaDataGroup"
+        }
+      ],
+      "rdfs:comment": "CIDME RDF Data Group.  Contains RDF data related to/describing the CIDME resource the parent resource is attached to.",
+      "rdfs:label": "RdfData"
     }
   ]
 }
