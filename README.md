@@ -109,7 +109,7 @@ The only other major usage of the term which turns up during web searches is a D
 ## Current project status
 
 * The project was first created in October 2016 and has undergone several major foundational changes.
-* As of November 2021 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
+* As of January 2023 the project focus is creating the specifications and an implementation of the core engine in JavaScript.
 * Actual code (_all currently in **alpha** stages!_):
   * [vocabulary definition files](http://cidme.net/vocab).  
     * See the [*gh-pages* branch of the CIDME GitHub repository](https://github.com/cidme/CIDME/tree/gh-pages) to find the vocab directory.
