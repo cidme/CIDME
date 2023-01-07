@@ -7,7 +7,13 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:EntityContextLinkDataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:entityContextLinks"
+      },
+      "rdfs:comment": "CIDME Entity Context Link Group.  Additional identifiers for an Entity Context.  Used to provide others external to this CIDME library a reference ID that is not the same as our internal ID, for aggregation, separation, or compartmentalization purposes.  Also used to store externally generated IDs in this CIDME library.",
+      "rdfs:label": "EntityContextLinkDataGroup"
     }
   ]
 }
