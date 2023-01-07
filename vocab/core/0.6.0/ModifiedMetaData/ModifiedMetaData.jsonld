@@ -7,7 +7,10 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:ModifiedMetaData",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Identifies MetaDataGroup resource as having information relating to a modification of the MetaDataGroup parent resource.",
+      "rdfs:label": "ModifiedMetaData"
     }
   ]
 }
