@@ -18,7 +18,7 @@
     "LastModifiedMetaData": {"@id": "cidme:LastModifiedMetaData/LastModifiedMetaData.jsonld"},
     "MetaDataGroup": {"@id": "cidme:MetaDataGroup/MetaDataGroup.jsonld"},
     "metaDataGroups": {"@id": "cidme:metaDataGroups/metaDataGroups.jsonld"},
-    "ModifiedMetaData": {"@id": "cidme:ModifiedMetaData/ModifiedMetadata.jsonld"},
+    "ModifiedMetaData": {"@id": "cidme:ModifiedMetaData/ModifiedMetaData.jsonld"},
     "NoteMetaData": {"@id": "cidme:NoteMetaData/NoteMetaData.jsonld"},
     "RdfData": {"@id": "cidme:RdfData/RdfData.jsonld"}
   }
