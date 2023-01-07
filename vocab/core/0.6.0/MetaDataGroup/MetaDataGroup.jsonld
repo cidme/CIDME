@@ -7,7 +7,13 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:MetaDataGroup",
+      "@type": "rdfs:Class",
+      "schema:domainIncludes": {
+        "@id": "cidme:metaDataGroups"
+      },
+      "rdfs:comment": "CIDME MetaData Group.  MetaData associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, EntityContextLinkDataGroup, or another MetaDataGroup).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:label": "MetaDataGroup"
     }
   ]
 }
