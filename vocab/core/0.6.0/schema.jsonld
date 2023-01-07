@@ -7,10 +7,10 @@
   },
   "@graph": [
     {
-      "@id": "cidme:CreatedMetadata",
+      "@id": "cidme:CreatedMetaData",
       "@type": "rdfs:Class",
       "rdfs:comment": "Identifies MetaDataGroup resource as having information relating to the creation of the MetaDataGroup parent resource.",
-      "rdfs:label": "CreatedMetadata"
+      "rdfs:label": "CreatedMetaData"
     },  
     {
       "@id": "cidme:data",
@@ -107,22 +107,22 @@
       "rdfs:label": "EntityContextLinkDataGroup"
     },
     {
-      "@id": "cidme:ImageMetadata",
+      "@id": "cidme:ImageMetaData",
       "@type": "rdfs:Class",
       "rdfs:comment": "Identifies MetaDataGroup resource as having image-related information for the MetaDataGroup parent resource.",
-      "rdfs:label": "ImageMetadata"
+      "rdfs:label": "ImageMetaData"
     },
     {
-      "@id": "cidme:LabelMetadata",
+      "@id": "cidme:LabelMetaData",
       "@type": "rdfs:Class",
       "rdfs:comment": "Identifies MetaDataGroup resource as having label-related information for the MetaDataGroup parent resource.",
-      "rdfs:label": "LabelMetadata"
+      "rdfs:label": "LabelMetaData"
     },
     {
-      "@id": "cidme:LastModifiedMetadata",
+      "@id": "cidme:LastModifiedMetaData",
       "@type": "rdfs:Class",
       "rdfs:comment": "Identifies MetaDataGroup resource as having information relating to the most recent modification of the MetaDataGroup parent resource.",
-      "rdfs:label": "LastModifiedMetadata"
+      "rdfs:label": "LastModifiedMetaData"
     },
     {
       "@id": "cidme:metaDataGroups",
@@ -147,7 +147,7 @@
       "schema:rangeIncludes": {
         "@id": "cidme:MetaDataGroup"
       },
-      "rdfs:comment": "CIDME Resource Metadata.",
+      "rdfs:comment": "CIDME Resource MetaData.",
       "rdfs:label": "metaDataGroups"
     },
     {
@@ -156,14 +156,20 @@
       "schema:domainIncludes": {
         "@id": "cidme:metaDataGroups"
       },
-      "rdfs:comment": "CIDME Metadata Group.  Metadata associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, EntityContextLinkDataGroup, or another MetadataGroup).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
+      "rdfs:comment": "CIDME MetaData Group.  MetaData associated with a CIDME resource (Entity, EntityContext, EntityContextDataGroup, EntityContextLinkDataGroup, or another MetaDataGroup).    Contains data about the data in another CIDME resource.  Provenance data, for example.  Multiple data can be grouped together for aggregation purposes.",
       "rdfs:label": "MetaDataGroup"
     },
     {
-      "@id": "cidme:NoteMetadata",
+      "@id": "cidme:ModifiedMetaData",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Identifies MetaDataGroup resource as having information relating to a modification of the MetaDataGroup parent resource.",
+      "rdfs:label": "ModifiedMetaData"
+    },
+    {
+      "@id": "cidme:NoteMetaData",
       "@type": "rdfs:Class",
       "rdfs:comment": "Identifies MetaDataGroup resource as having note/comment-related information for the MetaDataGroup parent resource.",
-      "rdfs:label": "NoteMetadata"
+      "rdfs:label": "NoteMetaData"
     },
     {
       "@id": "cidme:RdfData",
