@@ -7,7 +7,10 @@
   },
   "@graph": [
     {
-
+      "@id": "cidme:Entity",
+      "@type": "rdfs:Class",
+      "rdfs:comment": "Top-level CIDME object.",
+      "rdfs:label": "Entity"
     }
   ]
 }
