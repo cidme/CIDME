@@ -3,161 +3,162 @@
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "schema": "http://schema.org/",
-    "cidme": "http://cidme.net/vocab/core/0.3.0/"
+    "cidme": "http://cidme.net/vocab/core/0.6.0/",
+    "cidmeext": "http://cidme.net/vocab/ext/0.1.0/"
   },
   "@graph": [
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/resourceStatus",
+      "@id": "cidmeext:resourceStatus",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus"
+        "@id": "cidmeext:ResourceStatus"
       },
       "rdfs:comment": "CIDME Resource Status.  For use with StatusMetadata metadata.",
       "rdfs:label": "resourceStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:ResourceStatus",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Resource Status.",
       "rdfs:label": "ResourceStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ActiveStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:ActiveStatus",
+      "@type": "cidmeext:ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "ActiveStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ArchivedStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:ArchivedStatus",
+      "@type": "cidmeext:ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "ArchivedStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/CanceledStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:CanceledStatus",
+      "@type": "cidmeext:ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "CanceledStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ConceptionStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:ConceptionStatus",
+      "@type": "cidmeext:ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "ConceptionStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/InactiveStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:InactiveStatus",
+      "@type": "cidmeext:ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "InactiveStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/PurgedStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:PurgedStatus",
+      "@type": "cidmeext:ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "PurgedStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/StagingStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceStatus",
+      "@id": "cidmeext:StagingStatus",
+      "@type": "cidmeext:ResourceStatus",
       "rdfs:comment": "",
       "rdfs:label": "StagingStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/resourceSuperStatus",
+      "@id": "cidmeext:resourceSuperStatus",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus"
+        "@id": "cidmeext:ResourceSuperStatus"
       },
       "rdfs:comment": "CIDME Resource Super Status.  For use with StatusMetadata metadata.",
       "rdfs:label": "resourceSuperStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
+      "@id": "cidmeext:ResourceSuperStatus",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Resource Super Status.",
       "rdfs:label": "ResourceSuperStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ActiveSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
+      "@id": "cidmeext:ActiveSuperStatus",
+      "@type": "cidmeext:ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "ActingSuperStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ArchivedSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
+      "@id": "cidmeext:ArchivedSuperStatus",
+      "@type": "cidmeext:ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "ArchivedSuperStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/InactiveSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
+      "@id": "cidmeext:InactiveSuperStatus",
+      "@type": "cidmeext:ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "InactiveSuperStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/StagingSuperStatus",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/ResourceSuperStatus",
+      "@id": "cidmeext:StagingSuperStatus",
+      "@type": "cidmeext:ResourceSuperStatus",
       "rdfs:comment": "",
       "rdfs:label": "StagingSuperStatus"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/entityType",
+      "@id": "cidmeext:entityType",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
       },
       "schema:rangeIncludes": {
-        "@id": "http://cidme.net/vocab/ext/0.1.0/EntityType"
+        "@id": "cidmeext:EntityType"
       },
       "rdfs:comment": "CIDME Entity Type.",
       "rdfs:label": "entityType"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/EntityType",
+      "@id": "cidmeext:EntityType",
       "@type": "rdf:Class",
       "rdfs:comment": "CIDME Entity Type.",
       "rdfs:label": "EntityType"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/OrganizationEntityType",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/EntityType",
+      "@id": "cidmeext:OrganizationEntityType",
+      "@type": "cidmeext:EntityType",
       "rdfs:comment": "",
       "rdfs:label": "OrganizationEntityType"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/PersonEntityType",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/EntityType",
+      "@id": "cidmeext:PersonEntityType",
+      "@type": "cidmeext:EntityType",
       "rdfs:comment": "",
       "rdfs:label": "PersonEntityType"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/PlaceEntityType",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/EntityType",
+      "@id": "cidmeext:PlaceEntityType",
+      "@type": "cidmeext:EntityType",
       "rdfs:comment": "",
       "rdfs:label": "PlaceEntityType"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/ThingEntityType",
-      "@type": "http://cidme.net/vocab/ext/0.1.0/EntityType",
+      "@id": "cidmeext:ThingEntityType",
+      "@type": "cidmeext:EntityType",
       "rdfs:comment": "",
       "rdfs:label": "ThingEntityType"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/PersonNameEntityContextData",
+      "@id": "cidmeext:PersonNameEntityContextData",
       "@type": "rdf:Class",
       "rdfs:comment": "",
       "rdfs:label": "PersonNamedEntityContextData"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/displayName",
+      "@id": "cidmeext:displayName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -169,7 +170,7 @@
       "rdfs:label": "displayName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/familyName",
+      "@id": "cidmeext:familyName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -181,7 +182,7 @@
       "rdfs:label": "familyName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/generationQualifier",
+      "@id": "cidmeext:generationQualifier",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -193,7 +194,7 @@
       "rdfs:label": "generationQualifier"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/givenInformalName",
+      "@id": "cidmeext:givenInformalName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -205,7 +206,7 @@
       "rdfs:label": "givenInformalName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/givenName",
+      "@id": "cidmeext:givenName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -217,7 +218,7 @@
       "rdfs:label": "givenName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/indexName",
+      "@id": "cidmeext:indexName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -229,7 +230,7 @@
       "rdfs:label": "indexName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/middleName",
+      "@id": "cidmeext:middleName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -241,7 +242,7 @@
       "rdfs:label": "middleName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/nickName",
+      "@id": "cidmeext:nickName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -253,7 +254,7 @@
       "rdfs:label": "nickName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/prefixName",
+      "@id": "cidmeext:prefixName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -265,7 +266,7 @@
       "rdfs:label": "prefixName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/suffixName",
+      "@id": "cidmeext:suffixName",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -277,31 +278,31 @@
       "rdfs:label": "suffixName"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/DefaultMetadata",
+      "@id": "cidmeext:DefaultMetadata",
       "@type": "rdfs:Class",
       "rdfs:comment": "",
       "rdfs:label": "DefaultMetadata"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/EntityTypeMetadata",
+      "@id": "cidmeext:EntityTypeMetadata",
       "@type": "rdfs:Class",
       "rdfs:comment": "",
       "rdfs:label": "EntityTypeMetadata"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/StatusMetadata",
+      "@id": "cidmeext:StatusMetadata",
       "@type": "rdfs:Class",
       "rdfs:comment": "",
       "rdfs:label": "StatusMetadata"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/TypeMetadata",
+      "@id": "cidmeext:TypeMetadata",
       "@type": "rdfs:Class",
       "rdfs:comment": "",
       "rdfs:label": "TypeMetadata"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/default",
+      "@id": "cidmeext:default",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -313,7 +314,7 @@
       "rdfs:label": "default"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/type",
+      "@id": "cidmeext:type",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -325,7 +326,7 @@
       "rdfs:label": "type"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/startDateTime",
+      "@id": "cidmeext:startDateTime",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -337,7 +338,7 @@
       "rdfs:label": "startDateTime"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/endDateTime",
+      "@id": "cidmeext:endDateTime",
       "@type": "rdf:Property",
       "schema:domainIncludes": {
         "@id": "cidme:data"
@@ -349,7 +350,7 @@
       "rdfs:label": "endDateTime"
     },
     {
-      "@id": "http://cidme.net/vocab/ext/0.1.0/PersonNameEntityContextData",
+      "@id": "cidmeext:PersonNameEntityContextData",
       "@type": "rdfs:Class",
       "rdfs:comment": "",
       "rdfs:label": "PersonNameEntityContextData"
