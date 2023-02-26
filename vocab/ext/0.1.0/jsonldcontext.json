@@ -10,6 +10,7 @@
     "ArchivedSuperStatus": {"@id": "cidmeext:ArchivedSuperStatus/ArchivedSuperStatus.jsonld"},
     "CanceledStatus": {"@id": "cidmeext:CanceledStatus/CanceledStatus.jsonld"},
     "ConceptionStatus": {"@id": "cidmeext:ConceptionStatus/ConceptionStatus.jsonld"},
+    "ContactInfoEntityContextData": {"@id": "cidmeext:ContactInfoEntityContextData/ContactInfoEntityContextData.jsonld"},
     "DefaultMetadata": {"@id": "cidmeext:DefaultMetadata/DefaultMetadata.jsonld"},
     "EntityType": {"@id": "cidmeext:EntityType/EntityType.jsonld"},
     "EntityTypeMetadata": {"@id": "cidmeext:EntityTypeMetadata/EntityTypeMetadata.jsonld"},
