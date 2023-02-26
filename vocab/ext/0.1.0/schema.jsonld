@@ -348,12 +348,6 @@
       },
       "rdfs:comment": "",
       "rdfs:label": "endDateTime"
-    },
-    {
-      "@id": "cidmeext:PersonNameEntityContextData",
-      "@type": "rdfs:Class",
-      "rdfs:comment": "",
-      "rdfs:label": "PersonNameEntityContextData"
     }
   ]
 }
