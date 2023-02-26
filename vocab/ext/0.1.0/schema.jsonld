@@ -155,7 +155,7 @@
       "@id": "cidmeext:PersonNameEntityContextData",
       "@type": "rdf:Class",
       "rdfs:comment": "",
-      "rdfs:label": "PersonNamedEntityContextData"
+      "rdfs:label": "PersonNameEntityContextData"
     },
     {
       "@id": "cidmeext:displayName",
