@@ -348,6 +348,12 @@
       },
       "rdfs:comment": "",
       "rdfs:label": "endDateTime"
+    },
+    {
+      "@id": "cidmeext:ContactInfoEntityContextData",
+      "@type": "rdf:Class",
+      "rdfs:comment": "",
+      "rdfs:label": "ContactInfoEntityContextData"
     }
   ]
 }
